@@ -73,6 +73,7 @@ header {
     font-size: 1.5em;
     padding-top: calc(0.8 * var(--gap));
     padding-bottom: calc(0.8 * var(--gap));
+    height: 3.3em;
 }
 
 footer {
