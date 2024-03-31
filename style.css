@@ -42,7 +42,7 @@ h2 {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 4.3em;
     margin-bottom: 5.6em;
