@@ -27,7 +27,6 @@ body {
 
 #small-red-cross {
     color: var(--red);
-    font-size: 2em;
 
 }
 
@@ -42,10 +41,11 @@ h2 {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 4.3em;
     margin-bottom: 5.6em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 #back-button,
@@ -53,9 +53,9 @@ header {
     color: var(--blue);
 }
 
-#back-button {
+/* #back-button {
     visibility: hidden;
-}
+} */
 
 #grid {
     display: grid;
@@ -73,6 +73,13 @@ header {
     padding-bottom: calc(0.8 * var(--gap));
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #call-button {
     font-size: 1.25em;
     color: white;
@@ -83,6 +90,7 @@ header {
     padding-left: calc(4 * var(--gap));
     padding-right: calc(1.5 * var(--gap));
     margin-top: var(--gap);
+    margin-bottom: calc(0.5 * var(--gap));
 }
 
 #slide-to-call {
