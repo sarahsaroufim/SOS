@@ -6,7 +6,7 @@
     --blue: rgb(0, 122, 255);
 }
 
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -15,6 +15,9 @@ body {
     font-family: var(--font-roboto);
 }
 
-#grid{
+#grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    grid-auto-rows: minmax(3em, auto);
 }
