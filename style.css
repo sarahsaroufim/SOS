@@ -53,6 +53,10 @@ header {
     color: var(--blue);
 }
 
+#back-button {
+    visibility: hidden;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
