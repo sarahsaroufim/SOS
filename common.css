@@ -49,6 +49,7 @@ h1 {
 #back-button,
 #done-button {
     color: var(--blue);
+    font-weight: 300;
 }
 
 h2 {
