@@ -42,6 +42,14 @@ body {
     padding: 2.5em;
 }
 
+#first-aid-symbol {
+    font-size: 2.9em;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
 /* .slide-down {
     animation: slideDown 0.35s forwards;
 }
