@@ -13,8 +13,8 @@ body {
     border-radius: 4em;
     margin-top: var(--gap);
     margin-bottom: calc(0.5 * var(--gap));
-    width: 15em;
-    height: 4.6em;
+    width: 14em;
+    height: 4em;
 }
 
 #iphone-findable {
@@ -33,10 +33,12 @@ body {
 
 #cancel-text {
     font-weight: 300;
+    margin-top: calc(0.5 * var(--gap));
 }
 
 #X {
     background-color: var(--darker-gray);
     border-radius: 50%;
+    padding: 2.5em;
 }
 
