@@ -36,12 +36,9 @@ h1 {
     align-items: center;
 }
 
-header {
+#header-nav {
     font-size: 1.1em;
     font-weight: 500;
-}
-
-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +51,12 @@ header {
     color: var(--blue);
 }
 
-footer {
+h2 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#emergency-call {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +76,7 @@ footer {
     margin-bottom: calc(0.5 * var(--gap));
 }
 
+#iphone-findable,
 #slide-to-call {
     color: var(--dark-gray);
     font-weight: 300;

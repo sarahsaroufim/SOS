@@ -4,6 +4,24 @@
     visibility: hidden;
 }
 
+#instructions {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: var(--gap);
+    margin-top: var(--gap);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 0.94em;
+    color: var(--dark-gray);
+    margin-bottom: calc(2 * var(--gap));
+}
+
+.step {
+    margin-bottom: calc(1.94 * var(--gap));
+    width: 16em;
+}
 
 
 }

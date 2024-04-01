@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    margin-top: 6.8em;
+}
+
+#power-off,
+#first-aid,
+#medical-id,
+#start-call-button {
+    font-size: 1.25em;
+    color: white;
+    background-color: var(--darker-gray);
+    border-radius: 4em;
+    margin-top: var(--gap);
+    margin-bottom: calc(0.5 * var(--gap));
+    width: 15em;
+    height: 4.6em;
+}
+
+#iphone-findable {
+    font-size: 0.84em;
+    margin-bottom: 7.5em;
+}
+
+#slide-to-call,
+#cancel-button {
+    color: white;
+}
+
+#slide-to-call {
+    margin-bottom: 6em;
+}
+
+#cancel-text {
+    font-weight: 300;
+}
+
+#X {
+    background-color: var(--darker-gray);
+    border-radius: 50%;
+}
+
