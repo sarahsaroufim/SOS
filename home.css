@@ -20,4 +20,17 @@
     padding-bottom: calc(0.8 * var(--gap));
     height: 3.3em;
 }
+
+.slide-up {
+    animation: slideUp 0.35s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 }

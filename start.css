@@ -42,3 +42,16 @@ body {
     padding: 2.5em;
 }
 
+/* .slide-down {
+    animation: slideDown 0.35s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+} */
+
