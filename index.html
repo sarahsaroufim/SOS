@@ -8,35 +8,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="reset.css" rel="stylesheet">
-        <link href="home.css" rel="stylesheet">
         <link href="common.css" rel="stylesheet">
+        <link href="start.css" rel="stylesheet">
     </head>
     <body>
-        <header id="header-nav">
-            <button id="back-button">Back</button>
-            <h1><span id="small-red-cross">+</span> First Aid</h1>
-            <button id="done-button"><a href="start.html">Done</a></button>
+        <header>
+            <button id="power-off">slide to power off</button>
+            <p id="iphone-findable">iPhone Findable After Power Off</p>
         </header>
         <main>
-            <h2>Emergency Guides</h2>
-            <ul id="grid">
-                <button class="button-category"><a href="bleeding.html">BLEEDING</a></button>
-                <button class="button-category">CHOKING</button>
-                <button class="button-category">SUDDEN COLLAPSE</button>
-                <button class="button-category">DROWNING</button>
-                <button class="button-category">SEIZURE</button>
-                <button class="button-category">OVERDOSE</button>
-                <button class="button-category">BURN</button>
-                <button class="button-category">ELECTRIC SHOCK</button>
-                <button class="button-category">POISONING</button>
-                <button class="button-category">ALLERGY</button>
-                <button class="button-category">SNAKE BITE</button>
-                <button class="button-category">FRACTURE</button>
-            </ul>
+            <ol>
+                <div>
+                    <button id="first-aid"><a href="home.html">First Aid</a></button>
+                </div>
+                <div>
+                    <button id="medical-id">Medical ID</button>
+                </div>
+                <div>
+                    <button id="start-call-button">Emergency Call</button>
+                    <p id="slide-to-call">Slide to call Emergency Services</p>
+                </div>
+            </ol>
         </main>
-        <footer id="emergency-call">
-            <button id="call-button">Emergency Call</button>
-            <p id="slide-to-call">Slide to call Emergency Services</p>
+        <footer id="cancel-button">
+            <button id="X">X</button>
+            <p id="cancel-text">Cancel</p>
         </footer>
     </body>
 </html>
