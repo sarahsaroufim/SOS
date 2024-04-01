@@ -7,6 +7,7 @@ body {
 #first-aid,
 #medical-id,
 #start-call-button {
+    position: relative;
     font-size: 1.25em;
     color: white;
     background-color: var(--darker-gray);
@@ -42,37 +43,23 @@ body {
     padding: 2.5em;
 }
 
+#power-off-symbol,
 #first-aid-symbol,
 #medical-id-symbol,
 #sos-symbol {
     border-radius: 50%;
+    position: absolute;
+    padding: 1.8em;
 }
 
-#first-aid-symbol {
-    font-size: 2.9em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    background-color: var(--red);
-}
-
+#power-off-symbol,
 #medical-id-symbol {
-    font-size: 4em;
-    color: var(--red);
     background-color: white;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
 }
 
+#first-aid-symbol,
 #sos-symbol {
-    font-size: 1.5em;
-    font-family: var(--font-roboto-cond);
-    font-weight: 500;
     background-color: var(--red);
-    padding-left: 0.32em;
-    padding-right: 0.32em;
-    padding-top: 0.55em;
-    padding-bottom: 0.55em;
-
 }
 
 /* .slide-down {
