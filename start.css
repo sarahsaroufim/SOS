@@ -22,10 +22,35 @@ body {
 }
 
 #power-off {
-    color: black;
     margin-top: 6.8em;
-    background: linear-gradient(to right, rgba(224,224,224,0.6) 5%, rgba(151,211,255,0.6) 80%, rgba(247,247,247,0.6) 115%);
-    
+    background: linear-gradient(to right, rgba(224,224,224,0.5) 5%, rgba(151,211,255,0.4) 80%, rgba(247,247,247,0.5) 115%);
+}
+
+#linear-shine {
+    position: absolute;
+    font-size: 1.25em;
+    left: 8.1em;
+    top: 8.2em;
+    background: linear-gradient(to left, rgba(250, 250, 250) 20%, rgba(0, 0, 0) 40%, rgba(0, 0, 0) 70%, rgba(0, 0, 0) 100%);
+    background-size: 200% auto;
+    color: black;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: linearShine 4s linear infinite;
+}
+
+@keyframes linearShine {
+    0% {
+        background-position: 200% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 #iphone-findable {
@@ -45,7 +70,6 @@ body {
 }
 
 #slide-to-call {
-    color: white;
     margin-bottom: 6em;
 }
 
