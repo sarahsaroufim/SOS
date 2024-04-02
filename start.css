@@ -43,25 +43,6 @@ body {
     padding: 2.5em;
 }
 
-#power-off-symbol,
-#first-aid-symbol,
-#medical-id-symbol,
-#sos-symbol {
-    border-radius: 50%;
-    position: absolute;
-    padding: 1.8em;
-}
-
-#power-off-symbol,
-#medical-id-symbol {
-    background-color: white;
-}
-
-#first-aid-symbol,
-#sos-symbol {
-    background-color: var(--red);
-}
-
 /* .slide-down {
     animation: slideDown 0.35s forwards;
 }
