@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 431px) {
+@media only screen and (max-width: 500px) {
     
 
 body {
@@ -60,23 +60,31 @@ h2 {
 }
 
 #emergency-call {
-    display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
+    justify-content: center;
+    display: flex;
     flex-direction: column;
 }
 
+#sos-icon {
+    position: absolute;
+    z-index: 1;
+    padding-bottom: 0.7em;
+    padding-right: 12.6em;
+}
+
 #call-button {
+    position: relative;
     font-size: 1.25em;
     color: white;
     background-color: var(--darker-gray);
-    border-radius: 2em;
-    padding-top: var(--gap);
-    padding-bottom: var(--gap);
-    padding-left: calc(4 * var(--gap));
-    padding-right: calc(1.5 * var(--gap));
+    border-radius: 4em;
     margin-top: var(--gap);
     margin-bottom: calc(0.5 * var(--gap));
+    padding-left: 4.5em;
+    width: 14em;
+    height: 4em;
 }
 
 #iphone-findable,
