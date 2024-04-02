@@ -21,12 +21,22 @@ body {
 
 #iphone-findable {
     font-size: 0.84em;
-    margin-bottom: 7.5em;
+    margin-bottom: 7em;
 }
 
 #slide-to-call,
 #cancel-button {
     color: white;
+}
+
+#cancel-button {
+    position: relative;
+}
+
+#cancel-icon {
+    position: absolute;
+    margin-top: 0.73em;
+    margin-left: 0.8em;
 }
 
 #slide-to-call {
@@ -41,7 +51,7 @@ body {
 #X {
     background-color: var(--darker-gray-transparent);
     border-radius: 50%;
-    padding: 2.5em;
+    padding: 2.8em;
 }
 
 #power-off-icon,
