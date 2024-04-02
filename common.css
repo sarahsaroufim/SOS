@@ -8,7 +8,7 @@
     --blue: rgb(0, 122, 255);
     --light-gray: rgb(242, 242, 247);
     --dark-gray: rgb(142, 142, 146);
-    --darker-gray: rgb(96, 98, 100);
+    --darker-gray-transparent: rgba(96, 98, 100, 0.6);
     --gap: 1em;
 }
 
@@ -78,7 +78,7 @@ h2 {
     position: relative;
     font-size: 1.25em;
     color: white;
-    background-color: var(--darker-gray);
+    background-color: var(--dark-gray);
     border-radius: 4em;
     margin-top: var(--gap);
     margin-bottom: calc(0.5 * var(--gap));

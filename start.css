@@ -10,7 +10,7 @@ body {
     position: relative;
     font-size: 1.25em;
     color: white;
-    background-color: var(--darker-gray);
+    background-color: var(--darker-gray-transparent);
     border-radius: 4em;
     margin-top: var(--gap);
     margin-bottom: calc(0.5 * var(--gap));
@@ -39,7 +39,7 @@ body {
 }
 
 #X {
-    background-color: var(--darker-gray);
+    background-color: var(--darker-gray-transparent);
     border-radius: 50%;
     padding: 2.5em;
 }
