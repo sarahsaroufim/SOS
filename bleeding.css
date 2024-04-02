@@ -18,7 +18,11 @@ h3 {
 
 .step {
     margin-bottom: calc(1.94 * var(--gap));
-    width: 16em;
+    width: 17em;
+}
+
+.indent {
+    padding-left: 1em;
 }
 
 .slide-in-right {
