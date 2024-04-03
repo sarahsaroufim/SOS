@@ -17,13 +17,23 @@ h3 {
 }
 
 .step {
-    margin-bottom: calc(1.94 * var(--gap));
+    margin-top: var(--gap);
+    margin-bottom: calc(0.8 * var(--gap));
     width: 17em;
+}
+
+#step-9 {
+    margin-top: var(--gap);
 }
 
 .indent {
     padding-left: 1em;
 }
+
+hr.solid {
+    border-top: 0.5px solid var(--dark-gray);
+    margin-right: -1em;
+  }
 
 .slide-in-right {
     animation: slideInRight 0.35s forwards;

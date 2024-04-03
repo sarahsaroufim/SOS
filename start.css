@@ -110,16 +110,3 @@ body {
 #power-off-icon {
     margin-top: 8.97em;
 }
-
-/* .slide-down {
-    animation: slideDown 0.35s forwards;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(100%);
-    }
-} */
