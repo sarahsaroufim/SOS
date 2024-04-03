@@ -1,3 +1,33 @@
 #done-button {
     visibility: hidden;
 }
+
+p {
+    font-weight: 300;
+    margin-left: var(--gap);
+}
+
+#b-step-1 {
+    background-color: white;
+    border-radius: 0.5em;
+    padding-bottom: var(--gap);
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-left: var(--gap);
+    padding-top: var(--gap);
+    padding-bottom: calc(1.5 * var(--gap));
+}
+
+h2 {
+    margin-bottom: var(--gap);
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5em;  
+    padding-bottom: 4.5em; 
+}
