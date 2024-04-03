@@ -92,4 +92,17 @@ h2 {
     color: var(--dark-gray);
     font-weight: 300;
 }
+
+.slide-in-right {
+    animation: slideInRight 0.35s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 }

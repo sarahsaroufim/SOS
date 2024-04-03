@@ -34,16 +34,3 @@ hr.solid {
     border-top: 0.5px solid var(--dark-gray);
     margin-right: -1em;
   }
-
-.slide-in-right {
-    animation: slideInRight 0.35s forwards;
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
