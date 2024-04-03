@@ -17,6 +17,10 @@
     height: 3.2em;
 }
 
+.button-category:hover {
+    background-color: var(--gray);
+}
+
 .slide-up {
     animation: slideUp 0.35s forwards;
 }
