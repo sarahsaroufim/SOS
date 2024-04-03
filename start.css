@@ -53,8 +53,22 @@ body {
 }
 
 #iphone-findable {
+    position: relative;
     font-size: 0.84em;
     margin-bottom: 7em;
+    margin-left: 0.5em;
+}
+
+#satellite-icon {
+    position: absolute;
+    left: 5.9em;
+    bottom: 42.9em;
+}
+
+#arrow-icon {
+    position: absolute;
+    right: 6em;
+    bottom: 42.85em;
 }
 
 #cancel-button {
