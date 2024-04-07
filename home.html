@@ -10,6 +10,7 @@
         <link href="reset.css" rel="stylesheet">
         <link href="home.css" rel="stylesheet">
         <link href="common.css" rel="stylesheet">
+        <script defer src="assets/main.js"></script>
     </head>
     <body class="slide-up">
         <header id="header-nav">
@@ -19,20 +20,23 @@
         </header>
         <main>
             <h2>Emergency Guides</h2>
-            <ul id="grid">
-                <button class="button-category"><a href="bleeding.html">BLEEDING</a></button>
-                <button class="button-category">CHOKING</button>
-                <button class="button-category">COLLAPSE</button>
-                <button class="button-category">DROWNING</button>
-                <button class="button-category">SEIZURE</button>
-                <button class="button-category">OVERDOSE</button>
-                <button class="button-category">BURN</button>
-                <button class="button-category">SHOCK</button>
-                <button class="button-category">POISONING</button>
-                <button class="button-category">ALLERGY</button>
-                <button class="button-category">SNAKE BITE</button>
-                <button class="button-category">FRACTURE</button>
-            </ul>
+            <ul id="grid"></ul>
+
+            <div class="instructions-container">
+                <h2>BLEEDING</h2>
+                <ol id="instructions">
+                    <h3>Instructions</h3>
+                    <li class="step"><a href="bleeding-step-1.html">1. Immediately apply direct pressure</a></li><hr class="solid">
+                    <li class="step">2. Immobilize the injured body part</li><hr class="solid">
+                    <li class="step">3. Raise injury above heart</li><hr class="solid">
+                    <li class="step">4. Bandage pad firmly in place without <span class="indent">releasing</span> pressure</li><hr class="solid">
+                    <li class="step">5. Do not remove or cut an embedded <span class="indent">foreign</span> body</li><hr class="solid">
+                    <li class="step">6. Apply additional pad if leaking</li><hr class="solid">
+                    <li class="step">7. Reassure the patient</li><hr class="solid">
+                    <li class="step">8. If excessive bleeding persists, apply <span class="indent">a</span> tourniquet</li><hr class="solid">
+                    <li id="step-9">9. Call Emergency Services</li>
+                </ol>
+            </div>
         </main>
         <footer id="emergency-call">
             <img src="assets/sos-icon.svg" alt="White SOS text in a red circle, icon for the Emergency Call slider button" id="sos-icon">

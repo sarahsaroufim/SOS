@@ -17,6 +17,13 @@
     height: 3.2em;
 }
 
+.instructions-container {
+    background-color: blue;
+    position: fixed;
+    top: 10.7em;
+    padding-bottom: 19.4em;
+}
+
 .button-category:hover {
     background-color: var(--gray);
 }
