@@ -12,7 +12,7 @@ const renderItems = (data) => {
 			`<button class="button-category">${item.emergency_guides}</button>
 
 			<div class="instructions-container">
-			<h2>BLEEDING</h2>
+			<h2>${item.emergency_guides}</h2>
 			<ol id="instructions">
 				<h3>Instructions</h3>
 				<li class="step">${item.step1}</li><hr class="solid">
