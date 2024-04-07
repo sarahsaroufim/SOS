@@ -17,17 +17,49 @@
     height: 3.2em;
 }
 
-.instructions-container {
-    background-color: blue;
-    position: fixed;
-    top: 10.7em;
-    padding-bottom: 19.4em;
-}
-
 .button-category:hover {
     background-color: var(--gray);
 }
 
+.instructions-container,
+.instruction-details {
+    background-color: white;
+    border-radius: 0.5em;
+    position: fixed;
+    top: 10.7em;
+    padding: var(--gap);
+    height: 126vw;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 0.94em;
+    color: var(--dark-gray);
+    margin-bottom: calc(2 * var(--gap));
+}
+
+.step {
+    margin-top: var(--gap);
+    margin-bottom: calc(0.8 * var(--gap));
+}
+
+#step-9 {
+    margin-top: var(--gap);
+}
+
+hr.solid {
+    border-top: 0.5px solid var(--dark-gray);
+    margin-right: -1em;
+  }
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.7em;  
+    padding-bottom: 3.7em; 
+}
+  
 .slide-up {
     animation: slideUp 0.35s forwards;
 }

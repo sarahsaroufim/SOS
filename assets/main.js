@@ -17,13 +17,13 @@ const renderItems = (data) => {
 				<h3>Instructions</h3>
 				<li class="step">${item.step1}</li><hr class="solid">
 				<li class="step">${item.step2}</li><hr class="solid">
-				<li class="step">3. Raise injury above heart</li><hr class="solid">
-				<li class="step">4. Bandage pad firmly in place without <span class="indent">releasing</span> pressure</li><hr class="solid">
-				<li class="step">5. Do not remove or cut an embedded <span class="indent">foreign</span> body</li><hr class="solid">
-				<li class="step">6. Apply additional pad if leaking</li><hr class="solid">
-				<li class="step">7. Reassure the patient</li><hr class="solid">
-				<li class="step">8. If excessive bleeding persists, apply <span class="indent">a</span> tourniquet</li><hr class="solid">
-				<li id="step-9">9. Call Emergency Services</li>
+				<li class="step">${item.step3}</li><hr class="solid">
+				<li class="step">${item.step4}</li><hr class="solid">
+				<li class="step">${item.step5}</li><hr class="solid">
+				<li class="step">${item.step6}</li><hr class="solid">
+				<li class="step">${item.step7}</li><hr class="solid">
+				<li class="step">${item.step8}</li><hr class="solid">
+				<li id="step-9">${item.step9}</li>
 			</ol>
 		</div>
 			`
