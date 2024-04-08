@@ -92,12 +92,12 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step9_details" class="instruction-details">
-			<h3>${item.emergency_guides}</h3>
-			<h4 class="step-bold">${item.step9}</h4>
-			<p>${item.step9_details}</p>
-			<div class="image-container"><img src="${item.step9_image}"></div>
-			<p>${item.step9_details2}</p>
-		</section>
+				<h3>${item.emergency_guides}</h3>
+				<h4 class="step-bold">${item.step9}</h4>
+				<p>${item.step9_details}</p>
+				<div class="image-container"><img src="${item.step9_image}"></div>
+				<p>${item.step9_details2}</p>
+			</section>
 			`
 
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
