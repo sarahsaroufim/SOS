@@ -16,7 +16,6 @@
 html {
     overflow-x: hidden;
     overflow-y: hidden;
-    scroll-behavior: smooth;
 }
 
 /* iPhone 14/15 Pro Max, 430px x 932px */
@@ -104,7 +103,7 @@ h4 {
     font-weight: 300;
 }
 
-.slide-in-right {
+/* .slide-in-right {
     animation: slideInRight 0.35s forwards;
 }
 
@@ -115,5 +114,5 @@ h4 {
     to {
         transform: translateX(0);
     }
-}
+} */
 }

@@ -1,6 +1,6 @@
 [
     {
-        "emergency_guides": "Bleeding",
+        "emergency_guides": "BLEEDING",
         "step1": "1. Immediately apply direct pressure",
         "step1_details": "Use a sterile pad, a folded cloth or your hand if necessary. Apply it very firmly over the site.",
         "step1_image": "assets/image-placeholder.svg",
@@ -39,7 +39,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Choking",
+        "emergency_guides": "CHOKING",
         "step1": "Infant",
         "step1_details": "Never use abdominal thrusts on an infant. Lay them face down on your thigh and give up to five back blows.",
         "step1_image": "assets/image-placeholder.svg",
@@ -78,7 +78,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Seizure",
+        "emergency_guides": "SEIZURE",
         "step1": "1. Protect the victim from injury",
         "step1_details": "Remove any hazards like furniture.",
         "step1_image": null,
@@ -117,7 +117,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Overdose",
+        "emergency_guides": "OVERDOSE",
         "step1": "1. Risk assessment of victim and area",
         "step1_details": "Avoid harm from an agitated victim, bodily fluids or drug paraphernelia",
         "step1_image": null,
@@ -156,7 +156,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Burn",
+        "emergency_guides": "BURN",
         "step1": "1. Remove the victim from any further danger",
         "step1_details": null,
         "step1_image": null,
@@ -195,7 +195,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Shock",
+        "emergency_guides": "SHOCK",
         "step1": "1. Manage danger",
         "step1_details": "Turn off any power source.",
         "step1_image": null,
@@ -234,7 +234,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Stroke",
+        "emergency_guides": "STROKE",
         "step1": "1. Assess the victim",
         "step1_details": "Check the victim's face–does the mouth droop? Can the victim lift both arms?",
         "step1_image": null,
@@ -273,7 +273,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Allergy",
+        "emergency_guides": "ALLERGY",
         "step1": "1. Assist the victim to be comfortable",
         "step1_details": "Rest can slow the onset of a serious reaction.",
         "step1_image": null,
@@ -312,7 +312,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Bites",
+        "emergency_guides": "BITES",
         "step1": "Snake",
         "step1_details": "Immobilize victim. Apply pressure bandage and splint leaving fingertips or toes visible to monitor circulation.",
         "step1_image": "assets/image-placeholder.svg",
@@ -351,7 +351,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Poisoning",
+        "emergency_guides": "POISONING",
         "step1": "Conscious victim",
         "step1_details": "Clean up poison. If swallowed, wash out mouth with water. Do not encourage vomiting.",
         "step1_image": null,
@@ -390,7 +390,7 @@
         "step9_details2": null
     },
     {
-        "emergency_guides": "Fracture",
+        "emergency_guides": "FRACTURE",
         "step1": "1. Check for wounds",
         "step1_details": "Apply a sterile dressing and bandage in place.",
         "step1_image": null,

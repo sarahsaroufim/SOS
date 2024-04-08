@@ -31,7 +31,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step1}</h4>
 				<p>${item.step1_details}</p>
-				<div class="image-container">${item.step1_image}</div>
+				<div class="image-container"><img src="${item.step1_image}"></div>
 				<p>${item.step1_details2}</p>
 			</section>
 
@@ -39,7 +39,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step2}</h4>
 				<p>${item.step2_details}</p>
-				<div class="image-container">${item.step2_image}</div>
+				<div class="image-container"><img src="${item.step2_image}"></div>
 				<p>${item.step2_details2}</p>
 			</section>
 
@@ -47,7 +47,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step3}</h4>
 				<p>${item.step3_details}</p>
-				<div class="image-container">${item.step3_image}</div>
+				<div class="image-container"><img src="${item.step3_image}"></div>
 				<p>${item.step3_details2}</p>
 			</section>
 
@@ -55,7 +55,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step4}</h4>
 				<p>${item.step4_details}</p>
-				<div class="image-container">${item.step4_image}</div>
+				<div class="image-container"><img src="${item.step4_image}"></div>
 				<p>${item.step4_details2}</p>
 			</section>
 
@@ -63,7 +63,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step5}</h4>
 				<p>${item.step5_details}</p>
-				<div class="image-container">${item.step5_image}</div>
+				<div class="image-container"><img src="${item.step5_image}"></div>
 				<p>${item.step5_details2}</p>
 			</section>
 
@@ -71,7 +71,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step6}</h4>
 				<p>${item.step6_details}</p>
-				<div class="image-container">${item.step6_image}</div>
+				<div class="image-container"><img src="${item.step6_image}"></div>
 				<p>${item.step6_details2}</p>
 			</section>
 
@@ -79,7 +79,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step7}</h4>
 				<p>${item.step7_details}</p>
-				<div class="image-container">${item.step7_image}</div>
+				<div class="image-container"><img src="${item.step7_image}"></div>
 				<p>${item.step7_details2}</p>
 			</section>
 
@@ -87,7 +87,7 @@ const renderItems = (data) => {
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step8}</h4>
 				<p>${item.step8_details}</p>
-				<div class="image-container">${item.step8_image}</div>
+				<div class="image-container"><img src="${item.step8_image}"></div>
 				<p>${item.step8_details2}</p>
 			</section>
 
@@ -95,7 +95,7 @@ const renderItems = (data) => {
 			<h3>${item.emergency_guides}</h3>
 			<h4 class="step-bold">${item.step9}</h4>
 			<p>${item.step9_details}</p>
-			<div class="image-container">${item.step9_image}</div>
+			<div class="image-container"><img src="${item.step9_image}"></div>
 			<p>${item.step9_details2}</p>
 		</section>
 			`
