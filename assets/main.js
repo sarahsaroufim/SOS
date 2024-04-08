@@ -104,8 +104,6 @@ const renderItems = (data) => {
 	})
 }
 
-
-
 // Fetch gets your (local) JSON file…
 fetch('assets/emergencies.json')
 	.then(response => response.json())
