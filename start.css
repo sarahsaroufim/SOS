@@ -51,7 +51,10 @@ body {
 #iphone-findable {
     font-size: 0.84em;
     margin-bottom: 7em;
-    margin-left: 0.5em;
+}
+
+#satellite-icon {
+    margin-right: calc(0.5 * var(--gap));
 }
 
 #cancel-button {
