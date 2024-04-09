@@ -110,6 +110,13 @@ const renderItems = (data) => {
 		}
 	})
 
+	let instructionsDetails = document.querySelectorAll('.step');
+	instructionsDetails.forEach((openInstructionsDetails) => {
+		openInstructionsDetails.onclick = (event) => {
+			event.target.classList.toggle('active');
+		}
+	})
+
 }
 
 // Fetch gets your (local) JSON file…
