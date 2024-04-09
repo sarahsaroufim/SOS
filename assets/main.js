@@ -102,6 +102,14 @@ const renderItems = (data) => {
 
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
 	})
+
+	let instructionsPage =  document.querySelectorAll('.button-category')
+	instructionsPage.forEach((openInstructions) => {
+		openInstructions.onclick = () => {
+			openInstructions.nextElementSibling.classList.toggle('active')
+		}
+	})
+
 }
 
 // Fetch gets your (local) JSON file…

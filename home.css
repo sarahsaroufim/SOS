@@ -23,12 +23,18 @@
 
 .instructions-container,
 .instruction-details {
+    display: none;
+}
+
+.instructions-container.active,
+.instruction-details.active {
+    display: block;
     background-color: white;
     border-radius: 0.5em;
     position: fixed;
     top: 10.7em;
     padding: var(--gap);
-    height: 126vw;
+    height: 34.2em;
     font-weight: 300;
 }
 
