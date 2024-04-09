@@ -10,6 +10,7 @@
     --gray: rgb(229, 229, 234);
     --dark-gray: rgb(142, 142, 146);
     --dark-gray-transparent: rgba(142, 142, 146, 0.5);
+    --small-gap: 0.5em;
     --gap: 1em;
 }
 
@@ -91,7 +92,7 @@ h4 {
     background-color: var(--dark-gray);
     border-radius: 4em;
     margin-top: var(--gap);
-    margin-bottom: calc(0.5 * var(--gap));
+    margin-bottom: var(--small-gap);
     padding-left: 4.5em;
     width: 14em;
     height: 4em;

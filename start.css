@@ -14,7 +14,7 @@ body {
     background-color: var(--dark-gray-transparent);
     border-radius: 4em;
     margin-top: var(--gap);
-    margin-bottom: calc(0.5 * var(--gap));
+    margin-bottom: var(--small-gap);
     padding-left: 1.9em;
     width: 14em;
     height: 4em;
@@ -26,7 +26,7 @@ body {
 }
 
 #linear-shine {
-    margin-left: calc(0.5 * var(--gap));
+    margin-left: var(--small-gap);
     background: linear-gradient(to left, rgba(0, 0, 0) 30%, rgba(250, 250, 250) 50%, rgba(0, 0, 0) 70%);
     background-size: 200% auto;
     color: black;
@@ -56,12 +56,12 @@ body {
 #satellite-icon {
     position: relative;
     top: calc(0.18 * var(--gap));
-    right: calc(0.5 * var(--gap));
+    right: var(--small-gap);
 }
 
 #small-arrow-icon {
     position: relative;
-    left: calc(0.5 * var(--gap));
+    left: var(--small-gap);
 }
 
 #cancel-button {
@@ -81,7 +81,7 @@ body {
 
 #cancel-text {
     font-weight: 300;
-    margin-top: calc(0.5 * var(--gap));
+    margin-top: var(--small-gap);
 }
 
 #X {
