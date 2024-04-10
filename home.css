@@ -129,8 +129,8 @@ h4 {
 
 .instructions-container.active,
 .instruction-details.active {
-    height: 46.8em;
-    margin-top: 1.56em;
+    height: 48.2em;
+    margin-top: 1.35em;
 }
 
 .details,
@@ -138,4 +138,12 @@ h4 {
 #step9 {
     font-size: 1.5em;
 }
+
+.details {
+    max-width: 22em;
+}
+
+/* .image-container {
+    position: absolute;
+} */
 }

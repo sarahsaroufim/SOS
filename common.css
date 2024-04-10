@@ -148,9 +148,12 @@ body {
     margin-bottom: 4em;
 }
 
-#header-nav,
-h2 {
+#header-nav {
     font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
 }
 
 h3 {
