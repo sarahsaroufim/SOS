@@ -120,6 +120,7 @@ const renderItems = (data) => {
 		instructionDetailsPage.classList.remove('active')
 	}
 
+	// this is not working... it's calling the details for bleeding on every emergency
 	// open instruction details 1
 
 	let instructionDetails = document.querySelectorAll('#step1')
@@ -140,8 +141,61 @@ const renderItems = (data) => {
 		}
 	})
 
-	// do the rest details 3, 4... 9
+	let instructionDetails3 = document.querySelectorAll('#step3')
+	let instructionDetailsPage3 = document.querySelector('#step3_details')
+	instructionDetails3.forEach((openInstructionDetails3) => {
+		openInstructionDetails3.onclick = () => {
+			instructionDetailsPage3.classList.toggle('active')
+		}
+	})
 
+	let instructionDetails4 = document.querySelectorAll('#step4')
+	let instructionDetailsPage4 = document.querySelector('#step4_details')
+	instructionDetails4.forEach((openInstructionDetails4) => {
+		openInstructionDetails4.onclick = () => {
+			instructionDetailsPage4.classList.toggle('active')
+		}
+	})
+
+	let instructionDetails5 = document.querySelectorAll('#step5')
+	let instructionDetailsPage5 = document.querySelector('#step5_details')
+	instructionDetails5.forEach((openInstructionDetails5) => {
+		openInstructionDetails5.onclick = () => {
+			instructionDetailsPage5.classList.toggle('active')
+		}
+	})
+
+	let instructionDetails6 = document.querySelectorAll('#step6')
+	let instructionDetailsPage6 = document.querySelector('#step6_details')
+	instructionDetails6.forEach((openInstructionDetails6) => {
+		openInstructionDetails6.onclick = () => {
+			instructionDetailsPage6.classList.toggle('active')
+		}
+	})
+
+	let instructionDetails7 = document.querySelectorAll('#step7')
+	let instructionDetailsPage7 = document.querySelector('#step7_details')
+	instructionDetails7.forEach((openInstructionDetails7) => {
+		openInstructionDetails7.onclick = () => {
+			instructionDetailsPage7.classList.toggle('active')
+		}
+	})
+
+	let instructionDetails8 = document.querySelectorAll('#step8')
+	let instructionDetailsPage8 = document.querySelector('#step8_details')
+	instructionDetails8.forEach((openInstructionDetails8) => {
+		openInstructionDetails8.onclick = () => {
+			instructionDetailsPage8.classList.toggle('active')
+		}
+	})
+
+	let instructionDetails9 = document.querySelectorAll('#step9')
+	let instructionDetailsPage9 = document.querySelector('#step9_details')
+	instructionDetails9.forEach((openInstructionDetails9) => {
+		openInstructionDetails9.onclick = () => {
+			instructionDetailsPage9.classList.toggle('active')
+		}
+	})
 }
 
 // Fetch gets your (local) JSON file…
