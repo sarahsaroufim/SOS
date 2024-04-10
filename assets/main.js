@@ -103,6 +103,8 @@ const renderItems = (data) => {
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
 	})
 
+	// open instructions list + back & done buttons
+
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
@@ -114,21 +116,31 @@ const renderItems = (data) => {
 		}
 	})
 
-	let instructionsDetails = document.querySelectorAll('#step1')
-	let instructionsDetailsPage = document.querySelector('#step1_details')
-	instructionsDetails.forEach((openInstructionsDetails) => {
-		openInstructionsDetails.onclick = () => {
-			instructionsDetailsPage.classList.toggle('active')
+	backButton.onclick = () => {
+		instructionsDetailsPage.classList.remove('active')
+	}
+
+	// open instruction details 1
+
+	let instructionDetails = document.querySelectorAll('#step1')
+	let instructionDetailsPage = document.querySelector('#step1_details')
+	instructionDetails.forEach((openInstructionDetails) => {
+		openInstructionDetails.onclick = () => {
+			instructionDetailsPage.classList.toggle('active')
 		}
 	})
 
-	let instructionsDetails2 = document.querySelectorAll('#step2')
-	let instructionsDetailsPage2 = document.querySelector('#step2_details')
-	instructionsDetails2.forEach((openInstructionsDetails2) => {
-		openInstructionsDetails2.onclick = () => {
-			instructionsDetailsPage2.classList.toggle('active')
+	// open instruction details 2
+
+	let instructionDetails2 = document.querySelectorAll('#step2')
+	let instructionDetailsPage2 = document.querySelector('#step2_details')
+	instructionDetails2.forEach((openInstructionDetails2) => {
+		openInstructionDetails2.onclick = () => {
+			instructionDetailsPage2.classList.toggle('active')
 		}
 	})
+
+	// do the rest details 3, 4... 9
 
 }
 
