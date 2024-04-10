@@ -134,6 +134,12 @@ h4 {
 #call-button {
     display: none;
 }
+}
 
+@media only screen and (min-width: 1050px) {
 
+body {
+    margin-left: calc(3 * var(--gap));
+    margin-right: calc(3 * var(--gap));
+}
 }

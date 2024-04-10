@@ -102,5 +102,19 @@ hr.solid {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.button-category {
+    height: 4.5em;
+}
+}
 
+@media only screen and (min-width: 1050px) {
+
+#grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button-category {
+    font-size: 2em;
+    height: 5em;
+}
 }
