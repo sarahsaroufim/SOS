@@ -142,4 +142,31 @@ body {
     margin-left: calc(3 * var(--gap));
     margin-right: calc(3 * var(--gap));
 }
+
+#header-nav {
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+}
+
+#header-nav,
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.7em;
+    margin-top: var(--small-gap);
+}
+
+.step-bold {
+    font-size: 1.3em;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin-left: calc(7 * var(--gap));
+        margin-right: calc(7 * var(--gap));
+    }
+}
 }
