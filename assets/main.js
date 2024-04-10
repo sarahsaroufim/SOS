@@ -117,7 +117,7 @@ const renderItems = (data) => {
 	})
 
 	backButton.onclick = () => {
-		instructionsDetailsPage.classList.remove('active')
+		instructionDetailsPage.classList.remove('active')
 	}
 
 	// open instruction details 1
