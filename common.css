@@ -56,6 +56,10 @@ h1 {
     font-weight: 300;
 }
 
+#done-button.inactive {
+    visibility: hidden;
+}
+
 h2,
 h3,
 .step-bold {

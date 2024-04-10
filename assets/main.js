@@ -15,15 +15,15 @@ const renderItems = (data) => {
 			<h3>${item.emergency_guides}</h3>
 			<ol id="instructions">
 				<h4>Instructions</h4>
-				<li class="step"><a id="step1_details">${item.step1}</a></li><hr class="solid">
-				<li class="step"><a id="step2_details">${item.step2}</a></li><hr class="solid">
-				<li class="step"><a id="step3_details">${item.step3}</a></li><hr class="solid">
-				<li class="step"><a id="step4_details">${item.step4}</a></li><hr class="solid">
-				<li class="step"><a id="step5_details">${item.step5}</a></li><hr class="solid">
-				<li class="step"><a id="step6_details">${item.step6}</a></li><hr class="solid">
-				<li class="step"><a id="step7_details">${item.step7}</a></li><hr class="solid">
-				<li class="step"><a id="step8_details">${item.step8}</a></li><hr class="solid">
-				<li id="step-9"><a id="step9_details">${item.step9}</a></li>
+				<li class="step"><a id="step1">${item.step1}</a></li><hr class="solid">
+				<li class="step"><a id="step2">${item.step2}</a></li><hr class="solid">
+				<li class="step"><a id="step3">${item.step3}</a></li><hr class="solid">
+				<li class="step"><a id="step4">${item.step4}</a></li><hr class="solid">
+				<li class="step"><a id="step5">${item.step5}</a></li><hr class="solid">
+				<li class="step"><a id="step6">${item.step6}</a></li><hr class="solid">
+				<li class="step"><a id="step7">${item.step7}</a></li><hr class="solid">
+				<li class="step"><a id="step8">${item.step8}</a></li><hr class="solid">
+				<li id="step-9"><a id="step9">${item.step9}</a></li>
 			</ol>
 			</div>
 
@@ -104,16 +104,29 @@ const renderItems = (data) => {
 	})
 
 	let instructionsPage =  document.querySelectorAll('.button-category')
+	let backButton = document.querySelector('#back-button')
+	let doneButton = document.querySelector('#done-button')
 	instructionsPage.forEach((openInstructions) => {
 		openInstructions.onclick = () => {
 			openInstructions.nextElementSibling.classList.toggle('active')
+			backButton.classList.toggle('active')
+			doneButton.classList.toggle('inactive')
 		}
 	})
 
-	let instructionsDetails = document.querySelectorAll('.step');
+	let instructionsDetails = document.querySelectorAll('#step1')
+	let instructionsDetailsPage = document.querySelector('#step1_details')
 	instructionsDetails.forEach((openInstructionsDetails) => {
-		openInstructionsDetails.onclick = (event) => {
-			event.target.classList.toggle('active');
+		openInstructionsDetails.onclick = () => {
+			instructionsDetailsPage.classList.toggle('active')
+		}
+	})
+
+	let instructionsDetails2 = document.querySelectorAll('#step2')
+	let instructionsDetailsPage2 = document.querySelector('#step2_details')
+	instructionsDetails2.forEach((openInstructionsDetails2) => {
+		openInstructionsDetails2.onclick = () => {
+			instructionsDetailsPage2.classList.toggle('active')
 		}
 	})
 
