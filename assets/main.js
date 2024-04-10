@@ -120,7 +120,7 @@ const renderItems = (data) => {
 		instructionDetailsPage.classList.remove('active')
 	}
 
-	// this is not working... it's calling the details for bleeding on every emergency
+	// this is not working... i think it's calling the details for bleeding on every emergency
 	// open instruction details 1
 
 	let instructionDetails = document.querySelectorAll('#step1')

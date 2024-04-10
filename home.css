@@ -36,10 +36,19 @@
     background-color: white;
     border-radius: 0.5em;
     position: fixed;
+    width: 100%;
     top: 10.7em;
     padding: var(--gap);
     height: 34.2em;
     font-weight: 300;
+}
+
+.instructions-container.active {
+    z-index: 0;
+}
+
+.instructions-details.active {
+    z-index: 1;
 }
 
 h4 {
@@ -85,4 +94,13 @@ hr.solid {
     to {
         transform: translateY(0);
     }
+}
+
+@media only screen and (min-width: 665px) {
+
+#grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
 }
