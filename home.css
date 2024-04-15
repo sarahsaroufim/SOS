@@ -8,6 +8,11 @@
     cursor: pointer;
 }
 
+#home-back-button.active {
+    visibility: visible;
+    cursor: pointer;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -57,11 +62,11 @@
 h4 {
     font-size: 0.94em;
     color: var(--dark-gray);
-    margin-bottom: calc(2 * var(--gap));
+    margin-bottom: var(--mid-gap);
 }
 
 .gray-instructions {
-    margin-bottom: calc(2 * var(--gap));
+    margin-bottom: var(--mid-gap);
 }
 
 .step {
@@ -136,7 +141,7 @@ h4 {
 .instruction-details.active {
     height: 48.2em;
     margin-top: 1.35em;
-    padding: calc(2 * var(--gap));
+    padding: var(--mid-gap);
 }
 
 .details,
@@ -147,7 +152,7 @@ h4 {
 
 .details {
     max-width: 22em;
-    margin-bottom: calc(2 * var(--gap));
+    margin-bottom: var(--mid-gap);
 }
 
 .image-container {

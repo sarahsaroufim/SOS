@@ -12,6 +12,7 @@
     --dark-gray-transparent: rgba(142, 142, 146, 0.5);
     --small-gap: 0.5em;
     --gap: 1em;
+    --mid-gap: 2em;
 }
 
 html {

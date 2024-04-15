@@ -1,4 +1,5 @@
 // D.R.Y... i know... be prepared for some wet ass code
+// thank you michael for the nested arrays demonstration, i swear i was paying attention but i still can't do it <3
 
 // Function to render your items
 const renderItems = (data) => {
@@ -110,15 +111,17 @@ const renderItems = (data) => {
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
+	let homeBackButton = document.querySelector('#home-back-button')
 	instructionsPage.forEach((openInstructions) => {
 		openInstructions.onclick = () => {
+			homeBackButton.classList.toggle('active')
 			openInstructions.nextElementSibling.classList.toggle('active')
-			backButton.classList.toggle('active')
+			backButton.classList.remove('active')
 			doneButton.classList.toggle('inactive')
 		}
 	})
 
-	// back button works from every instruction details page
+	// back button that works from every instruction details page
 
 	backButton.onclick = () => {
 		instructionDetailsPage.classList.remove('active')
@@ -130,7 +133,10 @@ const renderItems = (data) => {
 		instructionDetailsPage7.classList.remove('active')
 		instructionDetailsPage8.classList.remove('active')
 		instructionDetailsPage9.classList.remove('active')
+		backButton.classList.remove('active')
+		homeBackButton.classList.toggle('active')
 	}
+
 
 	// opens instruction details for bleeding steps
 
@@ -139,6 +145,8 @@ const renderItems = (data) => {
 	instructionDetails.forEach((openInstructionDetails) => {
 		openInstructionDetails.onclick = () => {
 			instructionDetailsPage.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -147,6 +155,8 @@ const renderItems = (data) => {
 	instructionDetails2.forEach((openInstructionDetails2) => {
 		openInstructionDetails2.onclick = () => {
 			instructionDetailsPage2.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -155,6 +165,8 @@ const renderItems = (data) => {
 	instructionDetails3.forEach((openInstructionDetails3) => {
 		openInstructionDetails3.onclick = () => {
 			instructionDetailsPage3.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -163,6 +175,8 @@ const renderItems = (data) => {
 	instructionDetails4.forEach((openInstructionDetails4) => {
 		openInstructionDetails4.onclick = () => {
 			instructionDetailsPage4.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -171,6 +185,8 @@ const renderItems = (data) => {
 	instructionDetails5.forEach((openInstructionDetails5) => {
 		openInstructionDetails5.onclick = () => {
 			instructionDetailsPage5.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -179,6 +195,8 @@ const renderItems = (data) => {
 	instructionDetails6.forEach((openInstructionDetails6) => {
 		openInstructionDetails6.onclick = () => {
 			instructionDetailsPage6.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -187,6 +205,8 @@ const renderItems = (data) => {
 	instructionDetails7.forEach((openInstructionDetails7) => {
 		openInstructionDetails7.onclick = () => {
 			instructionDetailsPage7.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -195,6 +215,8 @@ const renderItems = (data) => {
 	instructionDetails8.forEach((openInstructionDetails8) => {
 		openInstructionDetails8.onclick = () => {
 			instructionDetailsPage8.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 
@@ -203,6 +225,8 @@ const renderItems = (data) => {
 	instructionDetails9.forEach((openInstructionDetails9) => {
 		openInstructionDetails9.onclick = () => {
 			instructionDetailsPage9.classList.toggle('active')
+			backButton.classList.toggle('active')
+			homeBackButton.classList.remove('active')
 		}
 	})
 }
