@@ -1,5 +1,4 @@
 // D.R.Y... i know... be prepared for some wet ass code
-// thank you michael for the nested arrays demonstration, i swear i was paying attention but i still can't do it <3
 
 // Function to render your items
 const renderItems = (data) => {
