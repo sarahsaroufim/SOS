@@ -49,10 +49,15 @@ h1 {
     margin-bottom: 5.3em;
 }
 
+#home-back-button,
 #back-button,
 #done-button {
     color: var(--blue);
     font-weight: 300;
+}
+
+#home-back-button {
+    margin-left: -8.6em;
 }
 
 #done-button.inactive {
@@ -73,7 +78,7 @@ h3 {
 
 .step-bold {
     font-size: 0.9em;
-    margin-bottom: calc(2 * var(--gap));
+    margin-bottom: calc(3 * var(--gap));
 }
 
 h4 {

@@ -1,3 +1,5 @@
+// D.R.Y... i know... be prepared for some wet ass code
+
 // Function to render your items
 const renderItems = (data) => {
 	// The `ul` where the items will be inserted
@@ -35,7 +37,7 @@ const renderItems = (data) => {
 				<p class="details">${item.step1_details2}</p>
 			</section>
 
-			<section id="step2_details" class="instruction-details">
+			<section id="step2_details" class="instruction-details"> 
 				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step2}</h4>
 				<p class="details">${item.step2_details}</p>
@@ -103,7 +105,7 @@ const renderItems = (data) => {
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
 	})
 
-	// open instructions list + back & done buttons
+	// opens instructions steps + back & done buttons
 
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
@@ -116,12 +118,21 @@ const renderItems = (data) => {
 		}
 	})
 
+	// back button works from every instruction details page
+
 	backButton.onclick = () => {
 		instructionDetailsPage.classList.remove('active')
+		instructionDetailsPage2.classList.remove('active')
+		instructionDetailsPage3.classList.remove('active')
+		instructionDetailsPage4.classList.remove('active')
+		instructionDetailsPage5.classList.remove('active')
+		instructionDetailsPage6.classList.remove('active')
+		instructionDetailsPage7.classList.remove('active')
+		instructionDetailsPage8.classList.remove('active')
+		instructionDetailsPage9.classList.remove('active')
 	}
 
-	// this is not working... i think it's calling the details for bleeding on every emergency
-	// open instruction details 1
+	// opens instruction details for bleeding steps
 
 	let instructionDetails = document.querySelectorAll('#step1')
 	let instructionDetailsPage = document.querySelector('#step1_details')
@@ -130,8 +141,6 @@ const renderItems = (data) => {
 			instructionDetailsPage.classList.toggle('active')
 		}
 	})
-
-	// open instruction details 2
 
 	let instructionDetails2 = document.querySelectorAll('#step2')
 	let instructionDetailsPage2 = document.querySelector('#step2_details')
