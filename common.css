@@ -126,7 +126,7 @@ h3 {
 }
 
 #cancel-button {
-    padding-bottom: calc(1.5 * var(--mid-gap));
+    padding-bottom: calc(2.75 * var(--mid-gap));
 }
 
 }

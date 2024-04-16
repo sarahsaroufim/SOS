@@ -6,12 +6,10 @@ const renderItems = (data) => {
 
 	// Loop through each item in the data array
 	data.forEach((item) => {
-		// console.log(item.emergency_guides)
 		
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
 		let listItem = "";
 
-		// <h3>${item.emergency_guides}</h3>
 		listItem +=
 			`
 			<button class="button-category">${item.emergency_guides}</button>
@@ -60,15 +58,6 @@ const renderItems = (data) => {
 				`
 			}
 		}
-				// <li class="step"><a id="step1">${item.step1}</a></li><hr class="solid">
-				// <li class="step"><a id="step2">${item.step2}</a></li><hr class="solid">
-				// <li class="step"><a id="step3">${item.step3}</a></li><hr class="solid">
-				// <li class="step"><a id="step4">${item.step4}</a></li><hr class="solid">
-				// <li class="step"><a id="step5">${item.step5}</a></li><hr class="solid">
-				// <li class="step"><a id="step6">${item.step6}</a></li><hr class="solid">
-				// <li class="step"><a id="step7">${item.step7}</a></li><hr class="solid">
-				// <li class="step"><a id="step8">${item.step8}</a></li><hr class="solid">
-				// <li id="step-9"><a id="step9">${item.step9}</a></li>
 
 		listItem +=	
 			`
@@ -282,7 +271,6 @@ function onLoad() {
 	fetch('assets/emergencies.json')
 		.then(response => response.json())
 		.then(data => {
-			// console.log(data)
 			// And passes the data to the function, above!
 			pageLevel = 1;
 			document.querySelector('#done-button').classList.remove('inactive');
