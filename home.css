@@ -1,4 +1,4 @@
-#home-back-button,
+
 #back-button {
     visibility: hidden;
 }
@@ -8,8 +8,16 @@
     cursor: pointer;
 }
 
+#home-back-button{
+    /* visibility: hidden; */
+    display: none;
+}
 #home-back-button.active {
-    visibility: visible;
+    /* visibility: visible; */
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
     cursor: pointer;
 }
 
@@ -73,6 +81,11 @@ h4 {
     margin-top: var(--gap);
     margin-bottom: calc(0.8 * var(--gap));
     cursor: pointer;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #step-9 {

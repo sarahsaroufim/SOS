@@ -56,11 +56,12 @@ h1 {
     color: var(--blue);
     font-weight: 300;
 }
-
-#home-back-button {
-    margin-left: -8.6em;
+#back-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(var(--gap)*0.5)
 }
-
 #done-button.inactive {
     visibility: hidden;
 }

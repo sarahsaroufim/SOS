@@ -4,33 +4,75 @@
 const renderItems = (data) => {
 	// The `ul` where the items will be inserted
 	const dataList = document.getElementById('grid')
+	dataList.innerHTML = '';
 
 	// Loop through each item in the data array
 	data.forEach((item) => {
 		console.log(item.emergency_guides)
-
+		
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
-		let listItem =
+		let listItem = "";
+
+		// <h3>${item.emergency_guides}</h3>
+		listItem +=
 			`<button class="button-category">${item.emergency_guides}</button>
 
 			<div class="instructions-container">
-			<h3>${item.emergency_guides}</h3>
+			
 			<ol id="instructions">
-				<h4>Instructions</h4>
-				<li class="step"><a id="step1">${item.step1}</a></li><hr class="solid">
-				<li class="step"><a id="step2">${item.step2}</a></li><hr class="solid">
-				<li class="step"><a id="step3">${item.step3}</a></li><hr class="solid">
-				<li class="step"><a id="step4">${item.step4}</a></li><hr class="solid">
-				<li class="step"><a id="step5">${item.step5}</a></li><hr class="solid">
-				<li class="step"><a id="step6">${item.step6}</a></li><hr class="solid">
-				<li class="step"><a id="step7">${item.step7}</a></li><hr class="solid">
-				<li class="step"><a id="step8">${item.step8}</a></li><hr class="solid">
-				<li id="step-9"><a id="step9">${item.step9}</a></li>
-			</ol>
+				<h4>Instructions</h4>`
+		
+		
+		console.log(item.number_of_steps);
+
+		//render the line for item.number_of_steps times
+		for (let i = 1; i <= item.number_of_steps; i++){
+
+			let temp = 'item.step' + i;
+			console.log('temp:'+temp);
+			listItem += `<li class="step"><a id="step${i}">`
+
+			if( i == 1 ){
+				listItem += `${item.step1}`;
+			} else if ( i == 2 ){
+				listItem += `${item.step2}`;
+			} else if ( i == 3 ){
+				listItem += `${item.step3}`;
+			} else if ( i == 4 ){
+				listItem += `${item.step4}`;
+			} else if ( i == 5 ){
+				listItem += `${item.step5}`;
+			} else if ( i == 6 ){
+				listItem += `${item.step6}`;
+			} else if ( i == 7 ){
+				listItem += `${item.step7}`;
+			} else if ( i == 8 ){
+				listItem += `${item.step8}`;
+			} else if ( i == 9 ){
+				listItem += `${item.step9}`;
+			}
+			
+			//if it's not the last step add a line
+			if (i < item.number_of_steps){
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li><hr class="solid">`
+			} else {
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li>`
+			}
+		}
+				// <li class="step"><a id="step1">${item.step1}</a></li><hr class="solid">
+				// <li class="step"><a id="step2">${item.step2}</a></li><hr class="solid">
+				// <li class="step"><a id="step3">${item.step3}</a></li><hr class="solid">
+				// <li class="step"><a id="step4">${item.step4}</a></li><hr class="solid">
+				// <li class="step"><a id="step5">${item.step5}</a></li><hr class="solid">
+				// <li class="step"><a id="step6">${item.step6}</a></li><hr class="solid">
+				// <li class="step"><a id="step7">${item.step7}</a></li><hr class="solid">
+				// <li class="step"><a id="step8">${item.step8}</a></li><hr class="solid">
+				// <li id="step-9"><a id="step9">${item.step9}</a></li>
+
+		listItem +=	`</ol>
 			</div>
 
 			<section id="step1_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step1}</h4>
 				<p class="details">${item.step1_details}</p>
 				<div class="image-container"><img src="${item.step1_image}"></div>
@@ -38,7 +80,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step2_details" class="instruction-details"> 
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step2}</h4>
 				<p class="details">${item.step2_details}</p>
 				<div class="image-container"><img src="${item.step2_image}"></div>
@@ -46,7 +87,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step3_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step3}</h4>
 				<p class="details">${item.step3_details}</p>
 				<div class="image-container"><img src="${item.step3_image}"></div>
@@ -54,7 +94,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step4_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step4}</h4>
 				<p class="details">${item.step4_details}</p>
 				<div class="image-container"><img src="${item.step4_image}"></div>
@@ -62,7 +101,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step5_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step5}</h4>
 				<p class="details">${item.step5_details}</p>
 				<div class="image-container"><img src="${item.step5_image}"></div>
@@ -70,7 +108,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step6_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step6}</h4>
 				<p class="details">${item.step6_details}</p>
 				<div class="image-container"><img src="${item.step6_image}"></div>
@@ -78,7 +115,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step7_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step7}</h4>
 				<p class="details">${item.step7_details}</p>
 				<div class="image-container"><img src="${item.step7_image}"></div>
@@ -86,7 +122,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step8_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step8}</h4>
 				<p class="details">${item.step8_details}</p>
 				<div class="image-container"><img src="${item.step8_image}"></div>
@@ -94,7 +129,6 @@ const renderItems = (data) => {
 			</section>
 
 			<section id="step9_details" class="instruction-details">
-				<h3>${item.emergency_guides}</h3>
 				<h4 class="step-bold">${item.step9}</h4>
 				<p class="details">${item.step9_details}</p>
 				<div class="image-container"><img src="${item.step9_image}"></div>
@@ -110,30 +144,45 @@ const renderItems = (data) => {
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
-	let homeBackButton = document.querySelector('#home-back-button')
+	// let homeBackButton = document.querySelector('#home-back-button')
 	instructionsPage.forEach((openInstructions) => {
 		openInstructions.onclick = () => {
-			homeBackButton.classList.toggle('active')
+			// homeBackButton.classList.toggle('active')
 			openInstructions.nextElementSibling.classList.toggle('active')
-			backButton.classList.remove('active')
-			doneButton.classList.toggle('inactive')
+			backButton.classList.add('active')
+			doneButton.classList.add('inactive')
+			//from level 1 to level 2
+			pageLevel = 2;
+
+			//put Emergency name at h2
+			// console.log(openInstructions.innerHTML);
+			document.querySelector('h2').innerHTML = openInstructions.innerHTML;
 		}
 	})
 
 	// back button that works from every instruction details page
 
 	backButton.onclick = () => {
-		instructionDetailsPage.classList.remove('active')
-		instructionDetailsPage2.classList.remove('active')
-		instructionDetailsPage3.classList.remove('active')
-		instructionDetailsPage4.classList.remove('active')
-		instructionDetailsPage5.classList.remove('active')
-		instructionDetailsPage6.classList.remove('active')
-		instructionDetailsPage7.classList.remove('active')
-		instructionDetailsPage8.classList.remove('active')
-		instructionDetailsPage9.classList.remove('active')
-		backButton.classList.remove('active')
-		homeBackButton.classList.toggle('active')
+		//if we are at 2nd level, go back to 1st
+		if(pageLevel == 2){
+			backButton.classList.remove('active')
+			document.querySelector('h2').innerHTML = 'Emergency Guides';
+			onLoad();
+		} else {
+		//if we are at 3rd level, go back to 2nd
+			pageLevel = 2;
+			instructionDetailsPage.classList.remove('active')
+			instructionDetailsPage2.classList.remove('active')
+			instructionDetailsPage3.classList.remove('active')
+			instructionDetailsPage4.classList.remove('active')
+			instructionDetailsPage5.classList.remove('active')
+			instructionDetailsPage6.classList.remove('active')
+			instructionDetailsPage7.classList.remove('active')
+			instructionDetailsPage8.classList.remove('active')
+			instructionDetailsPage9.classList.remove('active')
+		}
+		// backButton.classList.remove('active')
+		// homeBackButton.classList.toggle('active')
 	}
 
 
@@ -144,8 +193,9 @@ const renderItems = (data) => {
 	instructionDetails.forEach((openInstructionDetails) => {
 		openInstructionDetails.onclick = () => {
 			instructionDetailsPage.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -154,8 +204,9 @@ const renderItems = (data) => {
 	instructionDetails2.forEach((openInstructionDetails2) => {
 		openInstructionDetails2.onclick = () => {
 			instructionDetailsPage2.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -164,8 +215,9 @@ const renderItems = (data) => {
 	instructionDetails3.forEach((openInstructionDetails3) => {
 		openInstructionDetails3.onclick = () => {
 			instructionDetailsPage3.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -174,8 +226,9 @@ const renderItems = (data) => {
 	instructionDetails4.forEach((openInstructionDetails4) => {
 		openInstructionDetails4.onclick = () => {
 			instructionDetailsPage4.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -184,8 +237,9 @@ const renderItems = (data) => {
 	instructionDetails5.forEach((openInstructionDetails5) => {
 		openInstructionDetails5.onclick = () => {
 			instructionDetailsPage5.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -194,8 +248,9 @@ const renderItems = (data) => {
 	instructionDetails6.forEach((openInstructionDetails6) => {
 		openInstructionDetails6.onclick = () => {
 			instructionDetailsPage6.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -204,8 +259,9 @@ const renderItems = (data) => {
 	instructionDetails7.forEach((openInstructionDetails7) => {
 		openInstructionDetails7.onclick = () => {
 			instructionDetailsPage7.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -214,8 +270,9 @@ const renderItems = (data) => {
 	instructionDetails8.forEach((openInstructionDetails8) => {
 		openInstructionDetails8.onclick = () => {
 			instructionDetailsPage8.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 
@@ -224,18 +281,25 @@ const renderItems = (data) => {
 	instructionDetails9.forEach((openInstructionDetails9) => {
 		openInstructionDetails9.onclick = () => {
 			instructionDetailsPage9.classList.toggle('active')
-			backButton.classList.toggle('active')
-			homeBackButton.classList.remove('active')
+			backButton.classList.add('active')
+			// homeBackButton.classList.remove('active')
+			pageLevel = 3;
 		}
 	})
 }
 
 // Fetch gets your (local) JSON file…
-fetch('assets/emergencies.json')
-	.then(response => response.json())
-	.then(data => {
-		console.log(data)
-		// And passes the data to the function, above!
-		renderItems(data)
-	})
+function onLoad() {
+	fetch('assets/emergencies.json')
+		.then(response => response.json())
+		.then(data => {
+			console.log(data)
+			// And passes the data to the function, above!
+			pageLevel = 1;
+			document.querySelector('#done-button').classList.remove('inactive');
+			renderItems(data)
+		})
+};
 
+onLoad();
+let pageLevel = 1;
