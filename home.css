@@ -36,7 +36,7 @@
 .instruction-details.active {
     display: block;
     background-color: white;
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     position: fixed;
     width: 100%;
     top: 10.7em;
@@ -137,6 +137,7 @@ h4 {
     padding-top: var(--mid-gap);
     padding-bottom: var(--mid-gap);
     padding-left: var(--mid-gap);
+    border-radius: 2em;
 }
 
 .details,
@@ -158,5 +159,6 @@ h4 {
 
 .light-gray-arrow{
     margin-right: var(--small-gap);
+    scale: 140%;
 }
 }
