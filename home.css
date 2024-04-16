@@ -8,18 +8,16 @@
     cursor: pointer;
 }
 
-#home-back-button{
-    /* visibility: hidden; */
+/* #home-back-button{
     display: none;
 }
 #home-back-button.active {
-    /* visibility: visible; */
     display: block;
     position: relative;
     left: 0;
     top: 0;
     cursor: pointer;
-}
+} */
 
 #grid {
     display: grid;

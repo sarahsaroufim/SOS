@@ -8,7 +8,7 @@ const renderItems = (data) => {
 
 	// Loop through each item in the data array
 	data.forEach((item) => {
-		console.log(item.emergency_guides)
+		// console.log(item.emergency_guides)
 		
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
 		let listItem = "";
@@ -20,16 +20,16 @@ const renderItems = (data) => {
 			<div class="instructions-container">
 			
 			<ol id="instructions">
-				<h4>Instructions</h4>`
+			<h4>Instructions</h4>
+			`
 		
-		
-		console.log(item.number_of_steps);
+		// console.log(item.number_of_steps);
 
-		//render the line for item.number_of_steps times
+		// render the line for item.number_of_steps times
 		for (let i = 1; i <= item.number_of_steps; i++){
 
 			let temp = 'item.step' + i;
-			console.log('temp:'+temp);
+			// console.log('temp:'+temp);
 			listItem += `<li class="step"><a id="step${i}">`
 
 			if( i == 1 ){
@@ -52,11 +52,13 @@ const renderItems = (data) => {
 				listItem += `${item.step9}`;
 			}
 			
-			//if it's not the last step add a line
+			// if it's not the last step add the hr line
 			if (i < item.number_of_steps){
-				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li><hr class="solid">`
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li><hr class="solid">
+				`
 			} else {
-				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li>`
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li>
+				`
 			}
 		}
 				// <li class="step"><a id="step1">${item.step1}</a></li><hr class="solid">
@@ -69,9 +71,11 @@ const renderItems = (data) => {
 				// <li class="step"><a id="step8">${item.step8}</a></li><hr class="solid">
 				// <li id="step-9"><a id="step9">${item.step9}</a></li>
 
-		listItem +=	`</ol>
+		listItem +=	
+		
+			`
+			</ol>
 			</div>
-
 			<section id="step1_details" class="instruction-details">
 				<h4 class="step-bold">${item.step1}</h4>
 				<p class="details">${item.step1_details}</p>
@@ -151,11 +155,11 @@ const renderItems = (data) => {
 			openInstructions.nextElementSibling.classList.toggle('active')
 			backButton.classList.add('active')
 			doneButton.classList.add('inactive')
-			//from level 1 to level 2
+
+			// from level 1 to level 2
 			pageLevel = 2;
 
-			//put Emergency name at h2
-			// console.log(openInstructions.innerHTML);
+			// put emergency name at h2
 			document.querySelector('h2').innerHTML = openInstructions.innerHTML;
 		}
 	})
@@ -163,13 +167,15 @@ const renderItems = (data) => {
 	// back button that works from every instruction details page
 
 	backButton.onclick = () => {
-		//if we are at 2nd level, go back to 1st
+
+		// if we are at 2nd level, go back to 1st
 		if(pageLevel == 2){
 			backButton.classList.remove('active')
 			document.querySelector('h2').innerHTML = 'Emergency Guides';
 			onLoad();
+
+		// if we are at 3rd level, go back to 2nd
 		} else {
-		//if we are at 3rd level, go back to 2nd
 			pageLevel = 2;
 			instructionDetailsPage.classList.remove('active')
 			instructionDetailsPage2.classList.remove('active')
@@ -293,7 +299,7 @@ function onLoad() {
 	fetch('assets/emergencies.json')
 		.then(response => response.json())
 		.then(data => {
-			console.log(data)
+			// console.log(data)
 			// And passes the data to the function, above!
 			pageLevel = 1;
 			document.querySelector('#done-button').classList.remove('inactive');

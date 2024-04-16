@@ -50,18 +50,19 @@ h1 {
     margin-bottom: 5.3em;
 }
 
-#home-back-button,
 #back-button,
 #done-button {
     color: var(--blue);
     font-weight: 300;
 }
+
 #back-button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: calc(var(--gap)*0.5)
+    gap: var(--small-gap);
 }
+
 #done-button.inactive {
     visibility: hidden;
 }
