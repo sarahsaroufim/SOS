@@ -116,10 +116,15 @@ h4 {
     height: 4em;
 }
 
-#iphone-findable,
-#slide-to-call {
+#iphone-findable {
     color: var(--dark-gray);
     font-weight: 300;
+}
+
+#slide-to-call {
+    color: white;
+    font-weight: 300;
+    margin-top: var(--small-gap);
 }
 
 /* .slide-in-right {
