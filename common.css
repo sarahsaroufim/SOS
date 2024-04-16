@@ -124,6 +124,11 @@ h3 {
 #call-button {
     display: none;
 }
+
+#cancel-button {
+    padding-bottom: calc(1.5 * var(--mid-gap));
+}
+
 }
 
 @media only screen and (min-width: 1050px) {
