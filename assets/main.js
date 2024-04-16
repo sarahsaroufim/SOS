@@ -70,7 +70,6 @@ const renderItems = (data) => {
 				// <li id="step-9"><a id="step9">${item.step9}</a></li>
 
 		listItem +=	
-		
 			`
 			</ol>
 			</div>
