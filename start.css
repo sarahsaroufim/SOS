@@ -20,6 +20,10 @@ body {
     height: 4em;
 }
 
+#first-aid {
+    cursor: pointer;
+}
+
 #slide-to-call {
     color: white;
     margin-top: var(--small-gap);
@@ -28,6 +32,10 @@ body {
 #power-off {
     margin-top: 6.8em;
     background: linear-gradient(to right, rgba(224,224,224,0.5) 5%, rgba(151,211,255,0.4) 80%, rgba(247,247,247,0.5) 115%);
+}
+
+#start-call-button {
+    cursor: pointer;
 }
 
 #linear-shine {

@@ -13,7 +13,8 @@ const renderItems = (data) => {
 
 		// <h3>${item.emergency_guides}</h3>
 		listItem +=
-			`<button class="button-category">${item.emergency_guides}</button>
+			`
+			<button class="button-category">${item.emergency_guides}</button>
 
 			<div class="instructions-container">
 			
@@ -52,10 +53,10 @@ const renderItems = (data) => {
 			
 			// unless it's the last step, add the hr line + add gray arrow either way
 			if (i < item.number_of_steps){
-				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li><hr class="solid">
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg' class="light-gray-arrow"></li><hr class="solid">
 				`
 			} else {
-				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li>
+				listItem +=`</a><img src='assets/images/light-gray-arrow.svg' class="light-gray-arrow"></li>
 				`
 			}
 		}

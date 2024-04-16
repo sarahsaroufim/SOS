@@ -59,16 +59,10 @@ h4 {
     margin-bottom: var(--mid-gap);
 }
 
-.gray-instructions {
-    margin-bottom: var(--mid-gap);
-}
-
 .step {
     margin-top: var(--gap);
     margin-bottom: calc(0.8 * var(--gap));
     cursor: pointer;
-
-    /* flexbox */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,8 +81,8 @@ hr.solid {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;  
-    padding-bottom: 2em; 
+    padding-top: var(--mid-gap);  
+    padding-bottom: var(--mid-gap);
 }
   
 .slide-up {
@@ -133,14 +127,16 @@ hr.solid {
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .instructions-container.active,
 .instruction-details.active {
-    height: 48.2em;
-    margin-top: 1.35em;
-    padding: var(--mid-gap);
+    height: 46em;
+    margin-top: 0.4em;
+    padding-top: var(--mid-gap);
+    padding-bottom: var(--mid-gap);
+    padding-left: var(--mid-gap);
 }
 
 .details,
@@ -158,5 +154,9 @@ h4 {
     scale: 180%;
     right: 13em;
     top: 9em;
+}
+
+.light-gray-arrow{
+    margin-right: var(--small-gap);
 }
 }

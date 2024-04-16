@@ -20,7 +20,6 @@ html {
 }
 
 @media only screen and (min-width: 5px) {
-    
 
 body {
     font-family: var(--font-roboto);
@@ -80,8 +79,8 @@ h3 {
 }
 
 .step-bold {
-    font-size: 0.9em;
-    margin-bottom: calc(3 * var(--gap));
+    font-size: 1em;
+    margin-bottom: calc(2.5 * var(--gap));
 }
 
 #emergency-call {
@@ -117,19 +116,6 @@ h3 {
     color: var(--dark-gray);
     font-weight: 300;
 }
-
-/* .slide-in-right {
-    animation: slideInRight 0.35s forwards;
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-} */
 }
 
 @media only screen and (min-width: 665px) {
@@ -148,23 +134,11 @@ body {
 }
 
 #header-nav {
-    margin-top: 2.5em;
-    margin-bottom: 4em;
+    margin-top: calc(1.5 * var(--mid-gap));
+    margin-bottom: calc(2.75 * var(--mid-gap));
 }
 
-#header-nav {
-    font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1.3em;
-}
-
-h3 {
-    font-size: 1.7em;
-    margin-top: var(--small-gap);
-}
-
+h2,
 .step-bold {
     font-size: 1.3em;
 }
