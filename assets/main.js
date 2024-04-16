@@ -1,5 +1,3 @@
-// D.R.Y... i know... be prepared for some wet ass code
-
 // Function to render your items
 const renderItems = (data) => {
 	// The `ul` where the items will be inserted
@@ -143,14 +141,13 @@ const renderItems = (data) => {
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
 	})
 
-	// opens instructions steps + back & done buttons
+	// opens instructions list + back & done buttons
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
 	// let homeBackButton = document.querySelector('#home-back-button')
 	instructionsPage.forEach((openInstructions) => {
 		openInstructions.onclick = () => {
-			// homeBackButton.classList.toggle('active')
 			openInstructions.nextElementSibling.classList.toggle('active')
 			backButton.classList.add('active')
 			doneButton.classList.add('inactive')
@@ -185,8 +182,6 @@ const renderItems = (data) => {
 			instructionDetailsPage8.classList.remove('active')
 			instructionDetailsPage9.classList.remove('active')
 		}
-		// backButton.classList.remove('active')
-		// homeBackButton.classList.toggle('active')
 	}
 
 
@@ -197,7 +192,6 @@ const renderItems = (data) => {
 		openInstructionDetails.onclick = () => {
 			instructionDetailsPage.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -208,7 +202,6 @@ const renderItems = (data) => {
 		openInstructionDetails2.onclick = () => {
 			instructionDetailsPage2.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -219,7 +212,6 @@ const renderItems = (data) => {
 		openInstructionDetails3.onclick = () => {
 			instructionDetailsPage3.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -230,7 +222,6 @@ const renderItems = (data) => {
 		openInstructionDetails4.onclick = () => {
 			instructionDetailsPage4.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -241,7 +232,6 @@ const renderItems = (data) => {
 		openInstructionDetails5.onclick = () => {
 			instructionDetailsPage5.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -252,7 +242,6 @@ const renderItems = (data) => {
 		openInstructionDetails6.onclick = () => {
 			instructionDetailsPage6.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -263,7 +252,6 @@ const renderItems = (data) => {
 		openInstructionDetails7.onclick = () => {
 			instructionDetailsPage7.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -274,7 +262,6 @@ const renderItems = (data) => {
 		openInstructionDetails8.onclick = () => {
 			instructionDetailsPage8.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})
@@ -285,7 +272,6 @@ const renderItems = (data) => {
 		openInstructionDetails9.onclick = () => {
 			instructionDetailsPage9.classList.toggle('active')
 			backButton.classList.add('active')
-			// homeBackButton.classList.remove('active')
 			pageLevel = 3;
 		}
 	})

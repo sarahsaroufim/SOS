@@ -84,10 +84,6 @@ h3 {
     margin-bottom: calc(3 * var(--gap));
 }
 
-h4 {
-    padding-top: var(--gap);
-}
-
 #emergency-call {
     position: relative;
     align-items: center;

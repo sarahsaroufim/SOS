@@ -1,4 +1,3 @@
-
 #back-button {
     visibility: hidden;
 }
@@ -7,17 +6,6 @@
     visibility: visible;
     cursor: pointer;
 }
-
-/* #home-back-button{
-    display: none;
-}
-#home-back-button.active {
-    display: block;
-    position: relative;
-    left: 0;
-    top: 0;
-    cursor: pointer;
-} */
 
 #grid {
     display: grid;
