@@ -25,7 +25,7 @@ const renderItems = (data) => {
 		
 		// console.log(item.number_of_steps);
 
-		// render the line for item.number_of_steps times
+		// render the line for item.number_of_steps times / remove null steps by stopping at "number_of_steps" (json)
 		for (let i = 1; i <= item.number_of_steps; i++){
 
 			let temp = 'item.step' + i;
@@ -52,7 +52,7 @@ const renderItems = (data) => {
 				listItem += `${item.step9}`;
 			}
 			
-			// if it's not the last step add the hr line
+			// unless it's the last step, add the hr line + add gray arrow either way
 			if (i < item.number_of_steps){
 				listItem +=`</a><img src='assets/images/light-gray-arrow.svg'></li><hr class="solid">
 				`
@@ -144,7 +144,6 @@ const renderItems = (data) => {
 	})
 
 	// opens instructions steps + back & done buttons
-
 	let instructionsPage =  document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
@@ -156,16 +155,15 @@ const renderItems = (data) => {
 			backButton.classList.add('active')
 			doneButton.classList.add('inactive')
 
-			// from level 1 to level 2
+			// from level 1 to level 2 (instructions list to instruction details)
 			pageLevel = 2;
 
-			// put emergency name at h2
+			// put emergency name in h2's place
 			document.querySelector('h2').innerHTML = openInstructions.innerHTML;
 		}
 	})
 
-	// back button that works from every instruction details page
-
+	// back button that works from every page
 	backButton.onclick = () => {
 
 		// if we are at 2nd level, go back to 1st
@@ -192,8 +190,7 @@ const renderItems = (data) => {
 	}
 
 
-	// opens instruction details for bleeding steps
-
+	// opens instruction details for "bleeding" steps 1-9
 	let instructionDetails = document.querySelectorAll('#step1')
 	let instructionDetailsPage = document.querySelector('#step1_details')
 	instructionDetails.forEach((openInstructionDetails) => {
