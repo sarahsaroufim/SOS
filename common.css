@@ -66,15 +66,16 @@ h1 {
     visibility: hidden;
 }
 
-h2,
-.step-bold {
+h2 {
     color: black;
     font-size: 1.1em;
     font-weight: 500;
 }
 
 .step-bold {
+    color: var(--red);
     font-size: 1em;
+    font-weight: 500;
     margin-bottom: calc(2.5 * var(--gap));
 }
 
@@ -147,6 +148,12 @@ h2,
 .step-bold {
     font-size: 1.4em;
 }
+
+.step-bold {
+    margin-top: var(--small-gap);
+}
+
+
 
 }
 
