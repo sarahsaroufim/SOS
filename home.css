@@ -51,6 +51,9 @@
 
 .instructions-details.active {
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
 }
 
 h4 {
@@ -116,11 +119,25 @@ hr.solid {
 
 .instructions-container.active,
 .instruction-details.active {
-    height: 32.5em;
+    height: 41.8em;
+}
+
+h4 {
+    font-size: 1.18em;
+    margin-top: 0.4em;
+}
+
+.details,
+.step {
+    font-size: 1.3em;
+}
+
+.light-gray-arrow {
+    scale: 120%;
 }
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 980px) {
 
 #grid {
     grid-template-columns: repeat(4, 1fr);
@@ -132,7 +149,8 @@ hr.solid {
 }
 
 h4 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    margin-top: -0.4em;
 }
 
 .instructions-container.active,
@@ -154,14 +172,7 @@ h4 {
     margin-bottom: var(--mid-gap);
 }
 
-.image-container {
-    position: absolute;
-    scale: 180%;
-    right: 13em;
-    top: 9em;
-}
-
-.light-gray-arrow{
+.light-gray-arrow {
     margin-right: var(--small-gap);
     scale: 140%;
 }

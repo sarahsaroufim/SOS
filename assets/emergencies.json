@@ -161,7 +161,7 @@
     },
     {
         "emergency_guides": "BURN",
-        "number_of_steps": 9,
+        "number_of_steps": 8,
         "step1": "1. Remove the victim from any further danger",
         "step1_details": null,
         "step1_image": null,
@@ -170,7 +170,7 @@
         "step2_details": null,
         "step2_image": null,
         "step2_details2": null,
-        "step3": "3. Carefully remove any burnt or wet clothing",
+        "step3": "3. Carefully remove any burnt clothing",
         "step3_details": null,
         "step3_image": null,
         "step3_details2": null,
@@ -194,7 +194,7 @@
         "step8_details": null,
         "step8_image": null,
         "step8_details2": null,
-        "step9": "9. Call Emergency Services",
+        "step9": null,
         "step9_details": null,
         "step9_image": null,
         "step9_details2": null

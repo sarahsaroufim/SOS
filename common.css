@@ -67,15 +67,10 @@ h1 {
 }
 
 h2,
-h3,
 .step-bold {
     color: black;
     font-size: 1.1em;
     font-weight: 500;
-}
-
-h3 {
-    color: var(--red);
 }
 
 .step-bold {
@@ -129,9 +124,14 @@ h3 {
     padding-bottom: calc(2.75 * var(--mid-gap));
 }
 
+h2,
+.step-bold {
+    font-size: 1.25em;
 }
 
-@media only screen and (min-width: 1050px) {
+}
+
+@media only screen and (min-width: 980px) {
 
 body {
     margin-left: calc(3 * var(--gap));
@@ -145,14 +145,15 @@ body {
 
 h2,
 .step-bold {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
-@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1300px) {
 
     body {
-        margin-left: calc(7 * var(--gap));
-        margin-right: calc(7 * var(--gap));
+        margin-left: calc(9 * var(--gap));
+        margin-right: calc(9 * var(--gap));
     }
-}
 }
