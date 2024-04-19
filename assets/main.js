@@ -17,22 +17,21 @@ const renderItems = (data) => {
 	// Loop through each item in the data array
 	data.forEach((item) => {
 		
-		//level 1
+		// level 1
 		let level1Item = `<button class="button-category">${item.emergency_guides}</button>`
 		level1.insertAdjacentHTML('beforeend', level1Item);
 		
-		//level 2
+		// level 2
 		let level2Item = `
 			<div id='${item.emergency_guides}' class="instructions-container">
 			<ol id="instructions">
 			<h4>Instructions</h4>
 			`
 
-		// render the line for item.number_of_steps times / remove null steps by stopping at "number_of_steps" (json)
+		// render the line for item.number_of_steps times > remove null steps by stopping at "number_of_steps" (json)
 		for (let i = 1; i <= item.number_of_steps; i++){
 
 			let temp = 'item.step' + i;
-			// console.log('temp:'+temp);
 			level2Item += `<li class="step"><a id="step${i}">`
 
 			if( i == 1 ){
@@ -72,8 +71,6 @@ const renderItems = (data) => {
 
 
 		// level 3
-		// item.number_of_steps
-
 		let level3Item = ``
 
 		if ( item.number_of_steps >= 1 ){
@@ -171,12 +168,10 @@ const renderItems = (data) => {
 	let instructionsPage = document.querySelectorAll('.button-category')
 	let backButton = document.querySelector('#back-button')
 	let doneButton = document.querySelector('#done-button')
-	// let homeBackButton = document.querySelector('#home-back-button')
 
 	instructionsPage.forEach((openInstructions) => {
 		openInstructions.onclick = () => {
 
-			// openInstructions.nextElementSibling.classList.toggle('active')
 			backButton.classList.add('active')
 			doneButton.classList.add('inactive')
 
@@ -187,7 +182,6 @@ const renderItems = (data) => {
 			document.getElementById('level-1').style.display = 'none';
 
 			// show level 2
-			// console.log(openInstructions.innerHTML);
 			document.getElementById('level-2').style.display = 'block';
 			document.getElementById(openInstructions.innerHTML).style.display = 'block';
 			
@@ -210,15 +204,6 @@ const renderItems = (data) => {
 			pageLevel = 2;
 			level2.style.display = "block";
 			level3.style.display = 'none';
-			// instructionDetailsPage.classList.remove('active')
-			// instructionDetailsPage2.classList.remove('active')
-			// instructionDetailsPage3.classList.remove('active')
-			// instructionDetailsPage4.classList.remove('active')
-			// instructionDetailsPage5.classList.remove('active')
-			// instructionDetailsPage6.classList.remove('active')
-			// instructionDetailsPage7.classList.remove('active')
-			// instructionDetailsPage8.classList.remove('active')
-			// instructionDetailsPage9.classList.remove('active')
 		}
 	}
 
@@ -227,12 +212,6 @@ const renderItems = (data) => {
 	let level2StepButtons =  document.querySelectorAll('.step');
 	let level3Displays = document.querySelectorAll('.instruction-details');
 	let arrows = document.querySelectorAll('.light-gray-arrow');
-
-	// level2StepButtons.forEach((btn)=>{
-	// 	btn.onclick = () => {
-
-	// 	}
-	// })
 
 	// make certain steps unclickable + remove arrow
 	for ( let i = 0; i<level3Displays.length ; i++){
@@ -253,97 +232,6 @@ const renderItems = (data) => {
 		}
 
 	}
-
-	// let instructionDetails = document.querySelectorAll('#step1')
-	// let instructionDetailsPage = document.querySelector('#step1_details')
-
-	// instructionDetails.forEach((openInstructionDetails) => {
-	// 	openInstructionDetails.onclick = () => {
-	// 		instructionDetailsPage.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails2 = document.querySelectorAll('#step2')
-	// let instructionDetailsPage2 = document.querySelector('#step2_details')
-	// instructionDetails2.forEach((openInstructionDetails2) => {
-	// 	openInstructionDetails2.onclick = () => {
-	// 		instructionDetailsPage2.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails3 = document.querySelectorAll('#step3')
-	// let instructionDetailsPage3 = document.querySelector('#step3_details')
-	// instructionDetails3.forEach((openInstructionDetails3) => {
-	// 	openInstructionDetails3.onclick = () => {
-	// 		instructionDetailsPage3.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails4 = document.querySelectorAll('#step4')
-	// let instructionDetailsPage4 = document.querySelector('#step4_details')
-	// instructionDetails4.forEach((openInstructionDetails4) => {
-	// 	openInstructionDetails4.onclick = () => {
-	// 		instructionDetailsPage4.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails5 = document.querySelectorAll('#step5')
-	// let instructionDetailsPage5 = document.querySelector('#step5_details')
-	// instructionDetails5.forEach((openInstructionDetails5) => {
-	// 	openInstructionDetails5.onclick = () => {
-	// 		instructionDetailsPage5.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails6 = document.querySelectorAll('#step6')
-	// let instructionDetailsPage6 = document.querySelector('#step6_details')
-	// instructionDetails6.forEach((openInstructionDetails6) => {
-	// 	openInstructionDetails6.onclick = () => {
-	// 		instructionDetailsPage6.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails7 = document.querySelectorAll('#step7')
-	// let instructionDetailsPage7 = document.querySelector('#step7_details')
-	// instructionDetails7.forEach((openInstructionDetails7) => {
-	// 	openInstructionDetails7.onclick = () => {
-	// 		instructionDetailsPage7.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails8 = document.querySelectorAll('#step8')
-	// let instructionDetailsPage8 = document.querySelector('#step8_details')
-	// instructionDetails8.forEach((openInstructionDetails8) => {
-	// 	openInstructionDetails8.onclick = () => {
-	// 		instructionDetailsPage8.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
-
-	// let instructionDetails9 = document.querySelectorAll('#step9')
-	// let instructionDetailsPage9 = document.querySelector('#step9_details')
-	// instructionDetails9.forEach((openInstructionDetails9) => {
-	// 	openInstructionDetails9.onclick = () => {
-	// 		instructionDetailsPage9.classList.toggle('active')
-	// 		backButton.classList.add('active')
-	// 		pageLevel = 3;
-	// 	}
-	// })
 }
 
 // Fetch gets your (local) JSON file…
