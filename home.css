@@ -15,14 +15,15 @@
 
 #level-1 {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--mid-gap);
 }
 
 .button-category {
     background-color: white;
     text-align: center;
     border-radius: 0.4em;
-    font-size: 1.5em;
-    height: 3.2em;
+    font-size: 1.6em;
+    height: 3.5em;
     cursor: pointer;
 }
 
@@ -42,10 +43,13 @@
     border-radius: 0.6em;
     position: fixed;
     width: 100%;
-    top: 10.7em;
+    top: 10em;
     padding: var(--gap);
-    height: 33.8em;
     font-weight: 300;
+}
+
+#BLEEDING {
+    height: 44em;
 }
 
 .instructions-container.active {
@@ -59,6 +63,11 @@
     justify-content:space-evenly;
 }
 
+.light-gray-arrow {
+    scale: 120%;
+    padding-left: 1em;
+}
+
 h4 {
     font-size: 0.94em;
     color: var(--dark-gray);
@@ -66,6 +75,7 @@ h4 {
 }
 
 .step {
+    font-size: 1.3em;
     line-height: 1.26em;
     margin-top: var(--gap);
     margin-bottom: calc(0.8 * var(--gap));
@@ -90,10 +100,19 @@ hr.solid {
     align-items: center;
     padding-top: var(--mid-gap);  
     padding-bottom: var(--mid-gap);
+    background-color: white;
+    border-radius: 0.6em;
+    margin-bottom: var(--mid-gap);
 }
 
 .details {
+    font-size: 1.3em;
+    font-weight: 300;
     line-height: 1.5em;
+}
+
+.details-1 {
+    margin-bottom: var(--gap);
 }
   
 .slide-up {
