@@ -1,7 +1,7 @@
 // Function to render your items
 const renderItems = (data) => {
 
-	//set display
+	// set display
 	document.getElementById('level-1').style.display = 'grid';
 	document.getElementById('level-2').style.display = 'none';
 	document.getElementById('level-3').style.display = 'none';
@@ -75,34 +75,41 @@ const renderItems = (data) => {
 
 		if ( item.number_of_steps >= 1 ){
 			level3Item +=
-			`<section id="${item.emergency_guides}_step1_details" class="instruction-details ${item.emergency_guides}">
+			`
+			<section id="${item.emergency_guides}_step1_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step1}</h4>
 				<p class="details">${item.step1_details}</p>
 				<div class="image-container"><img src="${item.step1_image}"></div>
 				<p class="details">${item.step1_details2}</p>
-			</section>`
+			</section>
+			`
 		}
 		if ( item.number_of_steps >= 2 ){
 			level3Item +=
-			`<section id="${item.emergency_guides}_step2_details" class="instruction-details ${item.emergency_guides}"> 
+			`
+			<section id="${item.emergency_guides}_step2_details" class="instruction-details ${item.emergency_guides}"> 
 				<h4 class="step-bold">${item.step2}</h4>
 				<p class="details">${item.step2_details}</p>
 				<div class="image-container"><img src="${item.step2_image}"></div>
 				<p class="details">${item.step2_details2}</p>
-			</section>`
+			</section>
+			`
 		}
 		if ( item.number_of_steps >= 3 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step3_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step3}</h4>
 				<p class="details">${item.step3_details}</p>
 				<div class="image-container"><img src="${item.step3_image}"></div>
 				<p class="details">${item.step3_details2}</p>
-			</section>`
+			</section>
+			`
 
 		}
 		if ( item.number_of_steps >= 4 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step4_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step4}</h4>
 				<p class="details">${item.step4_details}</p>
@@ -112,7 +119,8 @@ const renderItems = (data) => {
 			`
 		}
 		if ( item.number_of_steps >= 5 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step5_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step5}</h4>
 				<p class="details">${item.step5_details}</p>
@@ -122,7 +130,8 @@ const renderItems = (data) => {
 			`
 		}
 		if ( item.number_of_steps >= 6 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step6_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step6}</h4>
 				<p class="details">${item.step6_details}</p>
@@ -132,7 +141,8 @@ const renderItems = (data) => {
 			`
 		}
 		if ( item.number_of_steps >= 7 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step7_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step7}</h4>
 				<p class="details">${item.step7_details}</p>
@@ -142,7 +152,8 @@ const renderItems = (data) => {
 			`
 		}
 		if ( item.number_of_steps >= 8 ){
-			level3Item += `
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step8_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step8}</h4>
 				<p class="details">${item.step8_details}</p>
@@ -152,7 +163,8 @@ const renderItems = (data) => {
 			`
 		}
 		if ( item.number_of_steps >= 9 ){
-			level3Item +=`
+			level3Item +=
+			`
 			<section id="${item.emergency_guides}_step9_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step9}</h4>
 				<p class="details">${item.step9_details}</p>
@@ -217,7 +229,7 @@ const renderItems = (data) => {
 	for ( let i = 0; i<level3Displays.length ; i++){
 
 		// manually choose every step without details (count steps from 0 to 67)
-		if ( i== 1 || i== 2 ) {
+		if ( i== 1 || i== 2 || i== 3 || i== 6 || i== 8 || i== 15 || i== 17 || i== 20 || i== 24 || i== 25 || i== 26 || i== 27 || i== 28 || i== 29 || i== 30 || i== 32 || i== 33 || i== 35 || i== 36 || i== 37 || i== 38 || i== 40 || i== 44 || i== 59 || i== 66 || i== 67) {
 			arrows[i].style.display = 'none';
 
 		} else {
