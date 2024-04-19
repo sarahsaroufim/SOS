@@ -208,7 +208,7 @@ const renderItems = (data) => {
 		// if we are at 2nd level, go back to 1st
 		if(pageLevel == 2){
 			backButton.classList.remove('active');
-			document.querySelector('h2').innerHTML = 'Emergency Guides';
+			document.querySelector('h2').innerHTML = 'EMERGENCY GUIDES';
 			onLoad();
 
 		// if we are at 3rd level, go back to 2nd
@@ -235,14 +235,12 @@ const renderItems = (data) => {
 		} else {
 			level2StepButtons[i].onclick = () => {
 				pageLevel = 3;
-				console.log('clicked');
 				level2.style.display = "none";
 				level3.style.display = 'block';
 				level3Displays.forEach(display => { display.style.display = "none";});
 				level3Displays[i].style.display = "block";
 				}
 		}
-
 	}
 }
 

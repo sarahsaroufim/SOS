@@ -45,8 +45,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.8em;
-    margin-bottom: 5em;
+    margin-top: 3.2em;
+    margin-bottom: 5.8em;
 }
 
 #back-button,
@@ -67,9 +67,8 @@ h1 {
 }
 
 h2 {
-    color: black;
+    color: var(--dark-gray);
     font-size: 1.1em;
-    font-weight: 500;
 }
 
 .step-bold {
@@ -79,6 +78,7 @@ h2 {
     /* font-weight: 500; */
     margin-top: var(--mid-gap);
     margin-bottom: var(--gap);
+    line-height: 1.3em;
 }
 
 #emergency-call {
@@ -154,8 +154,6 @@ h2,
 .step-bold {
     margin-top: var(--small-gap);
 }
-
-
 
 }
 
