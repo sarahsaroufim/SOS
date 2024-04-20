@@ -80,6 +80,7 @@ body {
 #cancel-button {
     color: white;
     position: relative;
+    margin-top: calc(-1 * var(--gap));
 }
 
 #cancel-icon {
