@@ -73,9 +73,9 @@ h2 {
 
 .step-bold {
     color: var(--red);
-    font-size: 1.4em;
+    font-size: 1.5em;
     border-radius: 0.3em;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: var(--gap);
     margin-bottom: var(--gap);
     line-height: 1.3em;
