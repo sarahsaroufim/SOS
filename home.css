@@ -242,11 +242,7 @@ hr.solid {
 }
 }
 
-.emergency-link {
-    color: var(--red);
-    cursor: pointer;
-}
-
+.emergency-link,
 .CPR-link {
     color: var(--blue);
     cursor: pointer;
