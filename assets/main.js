@@ -24,7 +24,7 @@ const renderItems = (data) => {
 		// level 2
 		let level2Item = `
 			<div id='${item.emergency_guides}' class="instructions-container">
-			<ol id="instructions">
+			<ol type="1" id="instructions">
 			`
 			// <h4>Instructions</h4>
 
@@ -32,8 +32,14 @@ const renderItems = (data) => {
 		for (let i = 1; i <= item.number_of_steps; i++){
 
 			let temp = 'item.step' + i;
-			level2Item += `<li class="step"><a id="step${i}">`
-
+			
+			//if it is a numbered list
+			if (item.numbered_list){
+				level2Item += `<li class="step"><span>${i}.</span><div><a id="step${i}">`
+			} else {
+				level2Item += `<li class="step"><div><a id="step${i}">`
+			}
+			
 			if( i == 1 ){
 				level2Item += `${item.step1}`;
 			} else if ( i == 2 ){
@@ -56,7 +62,7 @@ const renderItems = (data) => {
 			
 			// unless it's the last step, add the hr line + add gray arrow either way
 			if (i < item.number_of_steps){
-				level2Item +=`</a><img src='assets/images/light-gray-arrow.svg' class="light-gray-arrow"></li><hr class="solid">`
+				level2Item +=`</a><img src='assets/images/light-gray-arrow.svg' class="light-gray-arrow"></div></li><hr class="solid">`
 			} else {
 				level2Item +=`</a><img src='assets/images/light-gray-arrow.svg' class="light-gray-arrow"></li>`
 			}
@@ -78,9 +84,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step1_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step1}</h4>
-				<div class="image-container"><img src="${item.step1_image}"></div>
-				<p class="details details-background">${item.step1_details}</p>
-				<p class="details details-background">${item.step1_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step1_image}"></div>
+					<div>
+						<p class="details details-background">${item.step1_details}</p>
+						<p class="details details-background">${item.step1_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -89,9 +99,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step2_details" class="instruction-details ${item.emergency_guides}"> 
 				<h4 class="step-bold">${item.step2}</h4>
-				<div class="image-container"><img src="${item.step2_image}"></div>
-				<p class="details details-background">${item.step2_details}</p>
-				<p class="details details-background">${item.step2_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step2_image}"></div>
+					<div>
+						<p class="details details-background">${item.step2_details}</p>
+						<p class="details details-background">${item.step2_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -100,9 +114,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step3_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step3}</h4>
-				<div class="image-container"><img src="${item.step3_image}"></div>
-				<p class="details details-background">${item.step3_details}</p>
-				<p class="details details-background">${item.step3_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step3_image}"></div>
+					<div>
+						<p class="details details-background">${item.step3_details}</p>
+						<p class="details details-background">${item.step3_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 
@@ -112,9 +130,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step4_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step4}</h4>
-				<div class="image-container"><img src="${item.step4_image}"></div>
-				<p class="details details-background">${item.step4_details}</p>
-				<p class="details details-background">${item.step4_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step4_image}"></div>
+					<div>
+						<p class="details details-background">${item.step4_details}</p>
+						<p class="details details-background">${item.step4_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -123,9 +145,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step5_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step5}</h4>
-				<div class="image-container"><img src="${item.step5_image}"></div>
-				<p class="details details-background">${item.step5_details}</p>
-				<p class="details details-background">${item.step5_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step5_image}"></div>
+					<div>
+						<p class="details details-background">${item.step5_details}</p>
+						<p class="details details-background">${item.step5_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -134,9 +160,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step6_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step6}</h4>
-				<div class="image-container"><img src="${item.step6_image}"></div>
-				<p class="details details-background">${item.step6_details}</p>
-				<p class="details details-background">${item.step6_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step6_image}"></div>
+					<div>
+						<p class="details details-background">${item.step6_details}</p>
+						<p class="details details-background">${item.step6_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -145,9 +175,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step7_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step7}</h4>
-				<div class="image-container"><img src="${item.step7_image}"></div>
-				<p class="details details-background">${item.step7_details}</p>
-				<p class="details details-background">${item.step7_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step7_image}"></div>
+					<div>
+						<p class="details details-background">${item.step7_details}</p>
+						<p class="details details-background">${item.step7_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -156,9 +190,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step8_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step8}</h4>
-				<div class="image-container"><img src="${item.step8_image}"></div>
-				<p class="details details-background">${item.step8_details}</p>
-				<p class="details details-background">${item.step8_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step8_image}"></div>
+					<div>
+						<p class="details details-background">${item.step8_details}</p>
+						<p class="details details-background">${item.step8_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -167,9 +205,13 @@ const renderItems = (data) => {
 			`
 			<section id="${item.emergency_guides}_step9_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step9}</h4>
-				<div class="image-container"><img src="${item.step9_image}"></div>
-				<p class="details details-background">${item.step9_details}</p>
-				<p class="details details-background">${item.step9_details2}</p>
+				<div class="level-3-flex">
+					<div class="image-container"><img src="${item.step9_image}"></div>
+					<div>
+						<p class="details details-background">${item.step9_details}</p>
+						<p class="details details-background">${item.step9_details2}</p>
+					</div>
+				</div>
 			</section>
 			`
 		}
@@ -228,10 +270,11 @@ const renderItems = (data) => {
 	// make certain steps unclickable + remove arrow
 	for ( let i = 0; i<level3Displays.length ; i++){
 
-		// manually choose every step without details (count steps from 0 to 67)
-		if ( i== 1 || i== 2 || i== 3 || i== 6 || i== 8 || i== 15 || i== 17 || i== 20 || i== 24 || i== 25 || i== 26 || i== 27 || i== 28 || i== 29 || i== 30 || i== 32 || i== 33 || i== 35 || i== 36 || i== 37 || i== 38 || i== 40 || i== 44 || i== 59 || i== 66 || i== 67) {
+		// manually choose every step without details (count steps from 0 to 68)
+		if ( i== 1 || i== 2 || i== 3 || i== 6 || i== 8 || i== 15 || i== 17 || i== 20 || i== 24 || i== 25 || i== 26 || i== 27 || i== 28 || i== 29 || i== 31 || i== 32 || i== 33 || i== 35 || i== 36 || i== 37 || i== 38 || i== 40 || i== 44 || i== 59 || i== 66 || i== 67 || i== 68) {
 			arrows[i].style.display = 'none';
 
+			level2StepButtons[i].style.cursor = 'default';
 		} else {
 			level2StepButtons[i].onclick = () => {
 				pageLevel = 3;
@@ -242,6 +285,18 @@ const renderItems = (data) => {
 				}
 		}
 	}
+
+	//add onclick
+	document.querySelectorAll('.CPR-link').forEach(link => {
+		link.onclick = () => {
+			window.location.href = 'https://www.w3schools.com';
+		}
+	});
+	document.querySelectorAll('.emergency-link').forEach(link => {
+		link.onclick = () => {
+			window.location.href = 'https://www.w3schools.com';
+		}
+	});
 }
 
 // Fetch gets your (local) JSON file…
@@ -258,5 +313,3 @@ function onLoad() {
 
 onLoad();
 let pageLevel = 1;
-
-
