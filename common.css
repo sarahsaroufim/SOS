@@ -75,7 +75,7 @@ h2 {
     color: var(--blue);
     font-size: 1.3em;
     border-radius: 0.3em;
-    /* font-weight: 500; */
+    font-weight: 300;
     margin-top: var(--mid-gap);
     margin-bottom: var(--gap);
     line-height: 1.3em;
