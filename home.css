@@ -97,17 +97,23 @@ hr.solid {
     padding-bottom: var(--mid-gap);
     background-color: white;
     border-radius: 0.6em;
-    margin-bottom: var(--mid-gap);
+    margin-bottom: calc(0.75 * var(--mid-gap));
 }
 
 .details {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 300;
     line-height: 1.4em;
 }
 
-.details-1 {
+.details-background {
     margin-bottom: var(--gap);
+    background-color: white;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+    padding-top: calc(0.7 * var(--gap));
+    padding-bottom: calc(0.7 * var(--gap));
+    border-radius: 0.6em;
 }
   
 .slide-up {

@@ -79,8 +79,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step1_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step1}</h4>
 				<div class="image-container"><img src="${item.step1_image}"></div>
-				<p class="details details-1">${item.step1_details}</p>
-				<p class="details">${item.step1_details2}</p>
+				<p class="details details-background">${item.step1_details}</p>
+				<p class="details details-background">${item.step1_details2}</p>
 			</section>
 			`
 		}
@@ -90,8 +90,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step2_details" class="instruction-details ${item.emergency_guides}"> 
 				<h4 class="step-bold">${item.step2}</h4>
 				<div class="image-container"><img src="${item.step2_image}"></div>
-				<p class="details details-1">${item.step2_details}</p>
-				<p class="details">${item.step2_details2}</p>
+				<p class="details details-background">${item.step2_details}</p>
+				<p class="details details-background">${item.step2_details2}</p>
 			</section>
 			`
 		}
@@ -101,8 +101,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step3_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step3}</h4>
 				<div class="image-container"><img src="${item.step3_image}"></div>
-				<p class="details details-1">${item.step3_details}</p>
-				<p class="details">${item.step3_details2}</p>
+				<p class="details details-background">${item.step3_details}</p>
+				<p class="details details-background">${item.step3_details2}</p>
 			</section>
 			`
 
@@ -113,8 +113,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step4_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step4}</h4>
 				<div class="image-container"><img src="${item.step4_image}"></div>
-				<p class="details details-1">${item.step4_details}</p>
-				<p class="details">${item.step4_details2}</p>
+				<p class="details details-background">${item.step4_details}</p>
+				<p class="details details-background">${item.step4_details2}</p>
 			</section>
 			`
 		}
@@ -124,8 +124,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step5_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step5}</h4>
 				<div class="image-container"><img src="${item.step5_image}"></div>
-				<p class="details details-1">${item.step5_details}</p>
-				<p class="details">${item.step5_details2}</p>
+				<p class="details details-background">${item.step5_details}</p>
+				<p class="details details-background">${item.step5_details2}</p>
 			</section>
 			`
 		}
@@ -135,8 +135,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step6_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step6}</h4>
 				<div class="image-container"><img src="${item.step6_image}"></div>
-				<p class="details details-1">${item.step6_details}</p>
-				<p class="details">${item.step6_details2}</p>
+				<p class="details details-background">${item.step6_details}</p>
+				<p class="details details-background">${item.step6_details2}</p>
 			</section>
 			`
 		}
@@ -146,8 +146,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step7_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step7}</h4>
 				<div class="image-container"><img src="${item.step7_image}"></div>
-				<p class="details details-1">${item.step7_details}</p>
-				<p class="details">${item.step7_details2}</p>
+				<p class="details details-background">${item.step7_details}</p>
+				<p class="details details-background">${item.step7_details2}</p>
 			</section>
 			`
 		}
@@ -157,8 +157,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step8_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step8}</h4>
 				<div class="image-container"><img src="${item.step8_image}"></div>
-				<p class="details details-1">${item.step8_details}</p>
-				<p class="details">${item.step8_details2}</p>
+				<p class="details details-background">${item.step8_details}</p>
+				<p class="details details-background">${item.step8_details2}</p>
 			</section>
 			`
 		}
@@ -168,8 +168,8 @@ const renderItems = (data) => {
 			<section id="${item.emergency_guides}_step9_details" class="instruction-details ${item.emergency_guides}">
 				<h4 class="step-bold">${item.step9}</h4>
 				<div class="image-container"><img src="${item.step9_image}"></div>
-				<p class="details details-1">${item.step9_details}</p>
-				<p class="details">${item.step9_details2}</p>
+				<p class="details details-background">${item.step9_details}</p>
+				<p class="details details-background">${item.step9_details2}</p>
 			</section>
 			`
 		}
