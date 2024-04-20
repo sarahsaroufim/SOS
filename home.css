@@ -62,12 +62,6 @@
     padding-left: 1em;
 }
 
-/* h4 {
-    font-size: 0.94em;
-    color: var(--red);
-    margin-bottom: var(--mid-gap);
-} */
-
 .step {
     font-size: 1.4em;
     line-height: 1.35em;
@@ -160,25 +154,6 @@ hr.solid {
 .button-category {
     height: 4.5em;
 }
-
-.instructions-container.active,
-.instruction-details.active {
-    height: 41.8em;
-}
-
-/* h4 {
-    font-size: 1.18em;
-    margin-top: 0.4em;
-} */
-
-.details,
-.step {
-    font-size: 1.3em;
-}
-
-.light-gray-arrow {
-    scale: 120%;
-}
 }
 
 @media only screen and (min-width: 800px) {
@@ -199,11 +174,6 @@ hr.solid {
     font-size: 2em;
     height: 5em;
 }
-
-/* h4 {
-    font-size: 1.4em;
-    margin-top: -0.4em;
-} */
 
 .instructions-container.active,
 .instruction-details.active {

@@ -118,20 +118,9 @@ h2 {
 
 @media only screen and (min-width: 665px) {
 
-#emergency-call,
-#call-button {
-    display: none;
-}
-
 #cancel-button {
     padding-bottom: calc(2.75 * var(--mid-gap));
 }
-
-h2,
-.step-bold {
-    font-size: 1.25em;
-}
-
 }
 
 @media only screen and (min-width: 980px) {

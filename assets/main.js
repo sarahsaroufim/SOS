@@ -26,7 +26,6 @@ const renderItems = (data) => {
 			<div id='${item.emergency_guides}' class="instructions-container">
 			<ol type="1" id="instructions">
 			`
-			// <h4>Instructions</h4>
 
 		// render the line for item.number_of_steps times > remove null steps by stopping at "number_of_steps" (json)
 		for (let i = 1; i <= item.number_of_steps; i++){
