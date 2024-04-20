@@ -225,7 +225,7 @@ hr.solid {
 }
 }
 
-.level-3-flex, .level-3-flex>div:nth-child(2){
+.level-3-flex, .level-3-flex>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
@@ -233,15 +233,21 @@ hr.solid {
 
 @media only screen and (min-width: 1024px) {
 
-    .level-3-flex {
-        flex-direction: row;
-    }
-
-    .level-3-flex>div {
-        width: 50%;
-    }
+.level-3-flex {
+    flex-direction: row;
 }
 
-.emergency-link, .CPR-link{
+.level-3-flex>div {
+    width: 50%;
+}
+}
+
+.emergency-link {
+    color: var(--red);
+    cursor: pointer;
+}
+
+.CPR-link {
     color: var(--blue);
+    cursor: pointer;
 }

@@ -33,9 +33,11 @@ const renderItems = (data) => {
 
 			let temp = 'item.step' + i;
 			
-			//if it is a numbered list
+			// if it is a numbered list
 			if (item.numbered_list){
 				level2Item += `<li class="step"><span>${i}.</span><div><a id="step${i}">`
+
+			// if it's not a numbered list
 			} else {
 				level2Item += `<li class="step"><div><a id="step${i}">`
 			}
@@ -262,7 +264,6 @@ const renderItems = (data) => {
 	}
 
 	// level 2 to 3
-	// opens instruction details for "bleeding" steps 1-9
 	let level2StepButtons =  document.querySelectorAll('.step');
 	let level3Displays = document.querySelectorAll('.instruction-details');
 	let arrows = document.querySelectorAll('.light-gray-arrow');
@@ -286,15 +287,15 @@ const renderItems = (data) => {
 		}
 	}
 
-	//add onclick
+	// add onclick for CPR & call links
 	document.querySelectorAll('.CPR-link').forEach(link => {
 		link.onclick = () => {
-			window.location.href = 'https://www.w3schools.com';
+			window.location.href = '#CPR';
 		}
 	});
 	document.querySelectorAll('.emergency-link').forEach(link => {
 		link.onclick = () => {
-			window.location.href = 'https://www.w3schools.com';
+			window.location.href = 'tel:800-275-2273';
 		}
 	});
 }
