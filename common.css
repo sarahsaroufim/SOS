@@ -116,40 +116,25 @@ h2 {
 }
 }
 
-@media only screen and (min-width: 665px) {
+@media only screen and (min-width: 600px) {
 
 #cancel-button {
     padding-bottom: calc(2.75 * var(--mid-gap));
 }
 }
 
-@media only screen and (min-width: 980px) {
-
-body {
-    margin-left: calc(3 * var(--gap));
-    margin-right: calc(3 * var(--gap));
-}
+@media only screen and (min-width: 950px) {
 
 #header-nav {
-    margin-top: calc(1.5 * var(--mid-gap));
-    margin-bottom: calc(2.75 * var(--mid-gap));
+    margin-top: 2.5em;
+    margin-bottom: 7em;
+}
 }
 
-h2,
-.step-bold {
-    font-size: 1.4em;
+@media only screen and (min-width: 1350px) {
+
+body {
+    margin-left: calc(6 * var(--mid-gap));
+    margin-right: calc(6 * var(--mid-gap));
 }
-
-.step-bold {
-    margin-top: var(--small-gap);
-}
-
-}
-
-@media only screen and (min-width: 1300px) {
-
-    body {
-        margin-left: calc(9 * var(--gap));
-        margin-right: calc(9 * var(--gap));
-    }
 }

@@ -35,8 +35,7 @@
     display: none;
 }
 
-.instructions-container,
-.instruction-details.active {
+.instructions-container {
     background-color: white;
     border-radius: 0.6em;
     padding-top: var(--small-gap);
@@ -46,12 +45,7 @@
     font-weight: 300;
 }
 
-.instruction-container.active {
-    z-index: 0;
-}
-
 .instruction-details.active {
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -74,7 +68,18 @@
     gap: var(--small-gap);
     /* justify-content: space-between; */
 }
-.step div{
+
+/* .numbers {
+    color: var(--red);
+} */
+
+.emergency-link,
+.CPR-link {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.step div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,6 +123,12 @@ hr.solid {
     padding-bottom: calc(0.7 * var(--gap));
     border-radius: 0.6em;
 }
+
+.level-3-flex, .level-3-flex>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
   
 .slide-up {
     animation: slideUp 0.35s forwards;
@@ -145,7 +156,7 @@ hr.solid {
     }
 } */
 
-@media only screen and (min-width: 665px) {
+@media only screen and (min-width: 600px) {
 
 #level-1 {
     grid-template-columns: repeat(3, 1fr);
@@ -156,15 +167,20 @@ hr.solid {
 }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 950px) {
 
-    .instruction-details {
-        display: flex;
-        flex-direction: row;
-    }
+.instruction-details {
+    display: flex;
+    flex-direction: row;
 }
 
-@media only screen and (min-width: 980px) {
+.level-3-flex {
+    flex-direction: row;
+}
+
+.level-3-flex>div {
+    width: 50%;
+}
 
 #level-1 {
     grid-template-columns: repeat(4, 1fr);
@@ -175,45 +191,19 @@ hr.solid {
     height: 5em;
 }
 
-.instructions-container.active,
-.instruction-details.active {
-    height: 46em;
-    margin-top: 0.45em;
-    padding-top: var(--mid-gap);
-    padding-bottom: var(--mid-gap);
-    padding-left: var(--mid-gap);
-}
-
-.details,
-.step {
-    font-size: 1.5em;
-}
-
 .light-gray-arrow {
     margin-right: var(--small-gap);
-    scale: 140%;
-}
-}
-
-.level-3-flex, .level-3-flex>div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
+    scale: 180%;
 }
 
-@media only screen and (min-width: 1024px) {
-
-.level-3-flex {
-    flex-direction: row;
+.step,
+.details {
+    font-size: 2em;
 }
 
-.level-3-flex>div {
-    width: 50%;
+.instructions-container {
+    padding-top: var(--gap);
+    padding-left: var(--mid-gap);
+    margin-bottom: calc(1.5 * var(--mid-gap));
 }
-}
-
-.emergency-link,
-.CPR-link {
-    color: var(--blue);
-    cursor: pointer;
 }

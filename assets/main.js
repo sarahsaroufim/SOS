@@ -24,7 +24,7 @@ const renderItems = (data) => {
 		// level 2
 		let level2Item = `
 			<div id='${item.emergency_guides}' class="instructions-container">
-			<ol type="1" id="instructions">
+			<ol id="instructions">
 			`
 
 		// render the line for item.number_of_steps times > remove null steps by stopping at "number_of_steps" (json)
@@ -34,7 +34,7 @@ const renderItems = (data) => {
 			
 			// if it is a numbered list
 			if (item.numbered_list){
-				level2Item += `<li class="step"><span>${i}.</span><div><a id="step${i}">`
+				level2Item += `<li class="step"><span class="numbers">${i}.</span><div><a id="step${i}">`
 
 			// if it's not a numbered list
 			} else {
