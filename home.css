@@ -192,7 +192,7 @@ hr.solid {
 }
 
 .light-gray-arrow {
-    margin-right: var(--small-gap);
+    margin-right: var(--gap);
     scale: 180%;
 }
 

@@ -292,6 +292,7 @@ const renderItems = (data) => {
 			window.location.href = '#CPR';
 		}
 	});
+	
 	document.querySelectorAll('.emergency-link').forEach(link => {
 		link.onclick = () => {
 			window.location.href = 'tel:800-275-2273';
