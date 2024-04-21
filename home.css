@@ -121,7 +121,7 @@ hr.solid {
     padding-right: var(--gap);
     padding-top: calc(0.7 * var(--gap));
     padding-bottom: calc(0.7 * var(--gap));
-    border-radius: 0.6em;
+    border-radius: 0.35em;
 }
 
 .level-3-flex, .level-3-flex>div:nth-child(2) {

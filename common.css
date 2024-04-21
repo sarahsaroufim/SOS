@@ -126,8 +126,9 @@ h2 {
 @media only screen and (min-width: 950px) {
 
 #header-nav {
+    font-size: 0.85em;
     margin-top: 2.5em;
-    margin-bottom: 7em;
+    margin-bottom: 9em;
 }
 
 h2 {
