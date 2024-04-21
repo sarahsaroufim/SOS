@@ -73,9 +73,13 @@
     color: var(--red);
 } */
 
-.emergency-link,
 .CPR-link {
     color: var(--blue);
+    cursor: pointer;
+}
+
+.emergency-link {
+    color: var(--red);
     cursor: pointer;
 }
 

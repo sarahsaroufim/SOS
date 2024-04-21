@@ -125,12 +125,6 @@ h2 {
 
 @media only screen and (min-width: 950px) {
 
-#header-nav {
-    font-size: 0.85em;
-    margin-top: 2.5em;
-    margin-bottom: 9em;
-}
-
 h2 {
     font-size: 1.4em;
 }
@@ -143,7 +137,7 @@ h2 {
 @media only screen and (min-width: 1350px) {
 
 body {
-    margin-left: calc(6 * var(--mid-gap));
-    margin-right: calc(6 * var(--mid-gap));
+    margin-left: calc(5 * var(--mid-gap));
+    margin-right: calc(5 * var(--mid-gap));
 }
 }
