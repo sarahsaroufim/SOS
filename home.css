@@ -144,7 +144,7 @@ hr.solid {
 }
 
 /* .slide-right {
-    animation: slideRight 0.25s forwards;
+    animation: slideRight 0.3s both;
 }
 
 @keyframes slideRight {
@@ -172,6 +172,7 @@ hr.solid {
 .instruction-details {
     display: flex;
     flex-direction: row;
+    margin-bottom: calc(1.5 * var(--mid-gap));
 }
 
 .level-3-flex {
