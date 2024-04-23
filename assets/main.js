@@ -271,7 +271,7 @@ const renderItems = (data) => {
 	for ( let i = 0; i<level3Displays.length ; i++){
 
 		// manually choose every step without details (count steps from 0 to 68)
-		if ( i== 1 || i== 2 || i== 3 || i== 5 || i== 6 || i== 8 || i== 15 || i== 17 || i== 20 || i== 24 || i== 25 || i== 26 || i== 27 || i== 28 || i== 29 || i== 31 || i== 32 || i== 34 || i== 35 || i== 36 || i== 37 || i== 39 || i== 43 || i== 58 || i== 59 || i== 65 || i== 66 || i== 67 || i== 68) {
+		if ( i== 1 || i== 2 || i== 3 || i== 4 || i== 5 || i== 6 || i== 8 || i== 15 || i== 17 || i== 20 || i== 24 || i== 25 || i== 26 || i== 27 || i== 28 || i== 29 || i== 31 || i== 32 || i== 34 || i== 35 || i== 36 || i== 37 || i== 39 || i== 43 || i== 58 || i== 59 || i== 65 || i== 66 || i== 67 || i== 68) {
 			arrows[i].style.display = 'none';
 
 			level2StepButtons[i].style.cursor = 'default';
@@ -288,8 +288,27 @@ const renderItems = (data) => {
 
 	// add onclick for CPR & call links
 	document.querySelectorAll('.CPR-link').forEach(link => {
+
 		link.onclick = () => {
-			window.location.href = '#CPR';
+
+			// hide everything
+			document.getElementById('level-1').style.display = 'none';
+			document.querySelectorAll('#level-2>div').forEach(div => {
+				div.style.display = 'none'
+			});
+			document.querySelectorAll('#level-3>section').forEach(section => {
+				section.style.display = 'none'
+			});
+
+			// we are now on level 2
+			pageLevel = 2;
+
+			// show CPR
+			document.getElementById('level-2').style.display = 'block';
+			document.getElementById('CPR').style.display = 'block';
+			
+			// put CPR in h2's place
+			document.querySelector('h2').innerHTML = 'CPR';
 		}
 	});
 

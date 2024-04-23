@@ -73,12 +73,12 @@ h2 {
 
 .step-bold {
     color: var(--red);
-    font-size: 1.8em;
+    font-size: 2.8em;
     border-radius: 0.3em;
     font-weight: 400;
     margin-top: var(--gap);
     margin-bottom: var(--small-gap);
-    line-height: 1.3em;
+    line-height: 1.15em;
 }
 
 #emergency-call {
@@ -130,7 +130,7 @@ h2 {
 }
 
 .step-bold {
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 }
 

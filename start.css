@@ -20,6 +20,13 @@ body {
     height: 4em;
 }
 
+#unlock-gif {
+    width: 17.5em;
+    object-fit: fill;
+    position: relative;
+    top: -5.625em;
+}
+
 #first-aid {
     cursor: pointer;
 }
