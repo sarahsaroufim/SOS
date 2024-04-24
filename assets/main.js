@@ -230,7 +230,7 @@ const renderItems = (data) => {
 			backButton.classList.add('active')
 			doneButton.classList.add('inactive')
 
-			// from level 1 to level 2 (instructions list to instruction details)
+			// from level 1 to level 2
 			pageLevel = 2;
 
 			// hide level 1
